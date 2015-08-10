@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
-    <sid>2667636782075913</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <name>Copia do layout1</name>
+    <sid>6550279654404324</sid>
+    <event-sheet>Copia do event sheet 1</event-sheet>
     <size>
         <width>630</width>
         <height>360</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Background" sid="5868456704371659">
+        <layer name="Background" sid="2807100362575494">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="0">
+                <instance type="TiledBackground" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -64,7 +64,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Game" sid="9133387554742495">
+        <layer name="Game" sid="4281433302676651">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -80,7 +80,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Player" uid="1">
+                <instance type="Player" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -118,7 +118,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Block" uid="2">
+                <instance type="Block" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -158,7 +158,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="UI" sid="4786569128891915">
+        <layer name="UI" sid="5739284056012761">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -174,7 +174,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="DistanceDisplay" uid="3">
+                <instance type="DistanceDisplay" uid="9">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
