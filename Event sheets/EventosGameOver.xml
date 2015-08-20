@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosGameOver</name>
+    <events>
+        <variable constant="0" name="moedas_obtidas" sid="804790394168448" static="0" type="number">0</variable>
+        <event-block sid="1959957525359189">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2397725330273246" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1036436198440659" type="System">
+                    <param id="0" name="Variable">moedas_obtidas</param>
+                    <param id="1" name="Value">ceil(round(TotalDistance) / 10000)</param>
+                </action>
+                <action id="-9" name="Set value" sid="5403878871461636" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin + moedas_obtidas</param>
+                </action>
+                <action id="0" name="Set text" sid="3317679496902895" type="DistanciaPercorrida">
+                    <param id="0" name="Text">&quot;Distância percorrida: &quot; &amp; round(TotalDistance) &amp; &quot; (+&quot; &amp; moedas_obtidas &amp; &quot; moeda(s))&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="1267983324883641" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5377960808998542">
+            <conditions>
+                <condition id="9" name="On item exists" sid="786906425459679" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="6426420054614907" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">float(LocalStorage.ItemValue) + moedas_obtidas</param>
+                </action>
+                <action id="0" name="Set text" sid="4418348540379837" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; (float(LocalStorage.ItemValue) + moedas_obtidas)</param>
+                </action>
+                <action id="-5" name="Set width" sid="9537043835631115" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="8655514223641421" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="7273438434349727" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8049275271099551">
+            <conditions>
+                <condition id="10" name="On item missing" sid="4251987365805645" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3444317577440289" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; 0</param>
+                </action>
+                <action id="-5" name="Set width" sid="5977390254960921" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="315010788148034" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="6076454268037949" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="0" name="Set item" sid="4623352564779622" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3594294139554112">
+            <conditions>
+                <condition id="17" name="On tap object" sid="4502356550452344" type="Touch">
+                    <param id="0" name="Object">Botao_facebook</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="6543116326732535" type="Browser">
+                    <param id="0" name="URL">&quot;https://www.facebook.com/sharer/sharer.php?u=http://www.loucosdanuts.com/pitzilla_facebook.php?score=&quot; &amp; round(TotalDistance) &amp; &quot;:&quot; &amp; random(1,10)</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="326889042847724">
+            <conditions>
+                <condition id="17" name="On tap object" sid="445695914247759" type="Touch">
+                    <param id="0" name="Object">botao_menu_inicial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9284638967711712" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4450434840120524">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3787911629492071" type="Touch">
+                    <param id="0" name="Object">botao_jogar_novamente</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4342439624643357" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="8496664506079517" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

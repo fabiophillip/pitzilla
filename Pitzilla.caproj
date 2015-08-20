@@ -10,7 +10,9 @@
     <unique-id>mq4njje893h0</unique-id>
     <saved-with-version>20402</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -18,6 +20,8 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -66,6 +70,9 @@
         </object-type>
         <object-type name="Player" sid="2434559013781191">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="morto" sid="8000979834007627" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="8762862371753892">
                     <behavior id="Platform" />
@@ -86,15 +93,406 @@
         <object-type name="DistanceDisplay" sid="1505323859725527">
             <plugin id="Text" />
         </object-type>
+        <object-type name="DinoObstaculo" sid="4968462049767645">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="se_mexendo" sid="5347534287450658" type="boolean" />
+                <instance-variable name="qual_dinoobstaculo_eh" sid="2983702353898724" type="string" />
+                <instance-variable name="numero_dinoobstaculo" sid="3854406987965124" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="1583891800108022">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="9934226989745347">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="6052258452392642">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3769714771316673" speed="5">
+                    <frame duration="1" hotspotX="0.490196" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.00735295" y="0.00366972" />
+                            <point x="0.992647" y="0.00366972" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="alvo_pterodatilo" pingpong="0" repeatcount="1" repeatto="0" sid="6118532188479329" speed="5">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\alvo_pterodatilo_true_menor.png">
+                        <collision-poly>
+                            <point x="0.0893856" y="0.826087" />
+                            <point x="0.0223464" y="0.5" />
+                            <point x="0.139665" y="0.271739" />
+                            <point x="0.49162" y="0.0434784" />
+                            <point x="0.927374" y="0.141304" />
+                            <point x="0.977654" y="0.5" />
+                            <point x="0.860335" y="0.728261" />
+                            <point x="0.49162" y="0.98913" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="9" loop="1" name="espinhudo" pingpong="0" repeatcount="1" repeatto="0" sid="3609550082766363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor.png">
+                        <collision-poly>
+                            <point x="0.00735301" y="0.00366972" />
+                            <point x="0.992647" y="0.00366972" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor_2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor_3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor_4.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00735301" y="0.00366972" />
+                            <point x="0.992647" y="0.00366972" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00735301" y="0.00366972" />
+                            <point x="0.992647" y="0.00366972" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00735301" y="0.00366972" />
+                            <point x="0.992647" y="0.00366972" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00735301" y="0.00366972" />
+                            <point x="0.992647" y="0.00366972" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00735301" y="0.00366972" />
+                            <point x="0.992647" y="0.00366972" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="pterodatilo_perto_chao" pingpong="0" repeatcount="1" repeatto="0" sid="9358656214288574" speed="7">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor.png">
+                        <collision-poly>
+                            <point x="0.156863" y="0.186047" />
+                            <point x="0.490196" y="0" />
+                            <point x="0.784314" y="0.255814" />
+                            <point x="0.980392" y="0.488372" />
+                            <point x="0.882353" y="0.860465" />
+                            <point x="0.490196" y="0.930233" />
+                            <point x="0.137255" y="0.837209" />
+                            <point x="0" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor_2.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor_3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="1132335421448507">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\building-48626_640.png" />
+        </object-type>
+        <object-type name="Pterodatilo" sid="2948072430903093">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3568497919511488" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501279" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino-307720_640.png">
+                        <collision-poly>
+                            <point x="0.225" y="0.368286" />
+                            <point x="0.5" y="0" />
+                            <point x="0.775" y="0.368286" />
+                            <point x="0.9375" y="0.498721" />
+                            <point x="0.792188" y="0.659847" />
+                            <point x="0.5" y="0.938619" />
+                            <point x="0.207813" y="0.659847" />
+                            <point x="0.0625" y="0.498721" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="label_moedas" sid="5736019997001765">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="icone_coins" sid="3219536526898059">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7676770534453883" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.511111" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.1\estagio obrigatorio\moedinha\moedinha_nova.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.825" y="0.833333" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0.175" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="X_fim_jogo_coins" sid="9346138913401568">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LocalStorage" sid="3141410560494682">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="background_popup_gameover" sid="6859125568301095">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9979512739375029" speed="5">
+                    <frame duration="1" hotspotX="0.501538" hotspotY="0.501608" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\background_opopup_fim_de_jogo.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cabeca_dino_gameover" sid="2607211543398344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3379523549028158" speed="5">
+                    <frame duration="1" hotspotX="0.501859" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\cabeca_game_over.png">
+                        <collision-poly>
+                            <point x="0.107807" y="0.0986395" />
+                            <point x="0.498141" y="0.0272109" />
+                            <point x="0.780669" y="0.20068" />
+                            <point x="0.992565" y="0.5" />
+                            <point x="0.847584" y="0.860544" />
+                            <point x="0.498141" y="0.986395" />
+                            <point x="0.167286" y="0.846939" />
+                            <point x="0.0185874" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameOverTextoPopup" sid="7312027235988194">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ContinuarJogando" sid="6723876803479862">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="moedinha_menor" sid="3598973730486352">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="4235707022114434">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106145181276497" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\moedinha_nova_menor.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.166667" />
+                            <point x="0.5" y="0.0333333" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.833333" y="0.833333" />
+                            <point x="0.5" y="0.966667" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0.0333333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menos50" sid="8961780852568637">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Flash" sid="8857253963160521">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Botao_sim" sid="4204868837845349">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7865460490200484" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\botao_sim_nao.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_nao" sid="9475281351993542">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7054350456712062" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\botao_sim_nao.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sim" sid="6212397725994476">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="nao" sid="4230356777392805">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CliqueEmUmaPosicaoParaReviverPersonagem" sid="7469736683647127">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="DistanciaPercorrida" sid="2214291374409192">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BackgroundNormal" sid="2640504632620977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7245412439913584" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Textures\TiledBackground.png">
+                        <collision-poly>
+                            <point x="0.0047619" y="0.00833333" />
+                            <point x="0.995238" y="0.00833333" />
+                            <point x="0.995238" y="0.991667" />
+                            <point x="0.0047619" y="0.991667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="5521857887183177">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Botao_facebook" sid="3725474968613827">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3887417186440993" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\facebook_button_menor.png">
+                        <collision-poly>
+                            <point x="0.03" y="0.03" />
+                            <point x="0.5" y="0.01" />
+                            <point x="0.97" y="0.03" />
+                            <point x="0.99" y="0.5" />
+                            <point x="0.97" y="0.97" />
+                            <point x="0.5" y="0.99" />
+                            <point x="0.03" y="0.97" />
+                            <point x="0.01" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="5172430178094511">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1347976800828248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\facebook_button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="7107713610649397">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6803302088240777" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\botao_fim_jogo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_jogar_novamente" sid="8630763796005528">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3559491153313796" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\botao_fim_jogo.png">
+                        <collision-poly>
+                            <point x="0.06" y="0.166667" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.945" y="0.152778" />
+                            <point x="0.995" y="0.5" />
+                            <point x="0.94" y="0.833333" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.065" y="0.819444" />
+                            <point x="0.015" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_menu_inicial" sid="2533128151368766">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8911402018020644" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\botao_fim_jogo.png">
+                        <collision-poly>
+                            <point x="0.06" y="0.166667" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.945" y="0.152778" />
+                            <point x="0.995" y="0.5" />
+                            <point x="0.94" y="0.833333" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.065" y="0.819444" />
+                            <point x="0.015" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jogar_novamente" sid="1158694329806745">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="menu_inicial" sid="3792344425600375">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Copia do layout1.xml</layout>
+        <layout>MenuInicial.xml</layout>
+        <layout>GameOver.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Copia do event sheet 1.xml</event-sheet>
+        <event-sheet>EventosMenuInicial.xml</event-sheet>
+        <event-sheet>EventosGameOver.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="4">
@@ -103,6 +501,8 @@
             </properties>
         </global-instance>
         <global-instance type="Keyboard" uid="5" />
+        <global-instance type="LocalStorage" uid="18" />
+        <global-instance type="Browser" uid="38" />
     </global-instances>
     <sounds-folder />
     <music-folder />
