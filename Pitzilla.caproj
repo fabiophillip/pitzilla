@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Pitzilla</name>
     <description></description>
@@ -85,7 +85,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                 <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9514835308892654" speed="5">
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9514835308892654" speed="5">
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda1.png" />
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda2.png" />
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda3.png" />
@@ -645,7 +645,7 @@
         <object-type name="menu_inicial" sid="3792344425600375">
             <plugin id="Text" />
         </object-type>
-         <object-type name="pittsburg" sid="1806290931618109">
+        <object-type name="pittsburg" sid="1806290931618109">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Bullet" sid="1254072853408583">
@@ -778,14 +778,14 @@
         <event-sheet>EventosGameOver.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="4">
+        <global-instance type="Touch" uid="46">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="5" />
-        <global-instance type="LocalStorage" uid="18" />
-        <global-instance type="Browser" uid="38" />
+        <global-instance type="Keyboard" uid="47" />
+        <global-instance type="LocalStorage" uid="48" />
+        <global-instance type="Browser" uid="49" />
     </global-instances>
     <sounds-folder />
     <music-folder />

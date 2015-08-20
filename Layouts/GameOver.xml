@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="32">
+                <instance type="BackgroundNormal" uid="35">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GameOverTextoPopup" uid="33">
+                <instance type="GameOverTextoPopup" uid="36">
                     <properties>
                         <text>Game  Over</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DistanciaPercorrida" uid="34">
+                <instance type="DistanciaPercorrida" uid="37">
                     <properties>
                         <text>Distância percorrida:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -105,7 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_moedas" uid="35">
+                <instance type="label_moedas" uid="38">
                     <properties>
                         <text>Moedas:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -132,7 +132,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins" uid="36">
+                <instance type="icone_coins" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -154,7 +154,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="X_fim_jogo_coins" uid="37">
+                <instance type="X_fim_jogo_coins" uid="40">
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -181,7 +181,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Botao_facebook" uid="39">
+                <instance type="Botao_facebook" uid="41">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -203,7 +203,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_jogar_novamente" uid="40">
+                <instance type="botao_jogar_novamente" uid="42">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -225,7 +225,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_menu_inicial" uid="41">
+                <instance type="botao_menu_inicial" uid="43">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -247,7 +247,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="jogar_novamente" uid="42">
+                <instance type="jogar_novamente" uid="44">
                     <properties>
                         <text>Jogar novamente</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -274,7 +274,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="menu_inicial" uid="43">
+                <instance type="menu_inicial" uid="45">
                     <properties>
                         <text>Menu inicial</text>
                         <initial-visibility>Visible</initial-visibility>

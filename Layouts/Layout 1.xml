@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Layout 1</name>
-    <sid>2667636782075913</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <sid>9579771803361952</sid>
+    <event-sheet>Copia do event sheet 1</event-sheet>
     <size>
         <width>630</width>
         <height>360</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Background" sid="5868456704371659">
+        <layer name="Background" sid="7016357475171235">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -64,7 +64,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Game" sid="9133387554742495">
+        <layer name="Game" sid="1981278608531464">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -89,6 +89,12 @@
                     </properties>
                     <instance-variables>
                         <morto>false</morto>
+                        <dino_crescendo>false</dino_crescendo>
+                        <virou_pitzilla>false</virou_pitzilla>
+                        <dino_diminuindo>false</dino_diminuindo>
+                        <virou_dino_chicken>false</virou_dino_chicken>
+                        <dino_perdendo_poder_pittschicken>false</dino_perdendo_poder_pittschicken>
+                        <virou_pitts_batata>false</virou_pitts_batata>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -109,14 +115,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>101</x>
-                        <y>223</y>
+                        <x>95.061843872</x>
+                        <y>194.555999756</y>
                         <z>0</z>
-                        <width>35</width>
-                        <height>39</height>
+                        <width>65.354797363</width>
+                        <height>76.888000488</height>
                         <depth>0</depth>
-                        <hotspotX>0.514285743</hotspotX>
-                        <hotspotY>0.512820542</hotspotY>
+                        <hotspotX>0.505882382</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -158,7 +164,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DinoObstaculo" uid="10">
+                <instance type="DinoObstaculo" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -201,8 +207,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-152</x>
-                        <y>125</y>
+                        <x>-231</x>
+                        <y>-36</y>
                         <z>0</z>
                         <width>51</width>
                         <height>43</height>
@@ -213,7 +219,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Pterodatilo" uid="13">
+                <instance type="Pterodatilo" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -223,8 +229,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-87</x>
-                        <y>-178</y>
+                        <x>-209</x>
+                        <y>52</y>
                         <z>0</z>
                         <width>129.515335083</width>
                         <height>79.125770569</height>
@@ -235,29 +241,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Pterodatilo" uid="12">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-144</x>
-                        <y>-47</y>
-                        <z>0</z>
-                        <width>129.515335083</width>
-                        <height>79.125770569</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501278758</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="CliqueEmUmaPosicaoParaReviverPersonagem" uid="31">
+                <instance type="CliqueEmUmaPosicaoParaReviverPersonagem" uid="11">
                     <properties>
                         <text>Clique em alguma posição para reviver o personagem</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -287,7 +271,60 @@
             </instances>
             <effects />
         </layer>
-        <layer name="UI" sid="4786569128891915">
+        <layer name="hamburguer" sid="8108357754928123">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="pittsburg" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>300</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>136</x>
+                        <y>429</y>
+                        <z>0</z>
+                        <width>43.105270386</width>
+                        <height>37.118427277</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="UI" sid="9910597886848888">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -303,7 +340,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="DistanceDisplay" uid="3">
+                <instance type="DistanceDisplay" uid="13">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -330,10 +367,147 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="fundo_barra_pitzilla" uid="19">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>249</x>
+                        <y>316</y>
+                        <z>0</z>
+                        <width>400</width>
+                        <height>31</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.516129017</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="frente_barra_pitzilla" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <barra_aumentando>false</barra_aumentando>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>54</x>
+                        <y>315</y>
+                        <z>0</z>
+                        <width>0</width>
+                        <height>26</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.516129017</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="barra_nome_pittzilla" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>409</x>
+                        <y>474</y>
+                        <z>0</z>
+                        <width>400</width>
+                        <height>31</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.516129017</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pittschicken" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>300</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>192.682418823</x>
+                        <y>430.827545166</y>
+                        <z>0</z>
+                        <width>51.759132385</width>
+                        <height>33.711540222</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.50505048</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="batata" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>300</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>104.556922913</x>
+                        <y>527.743896484</y>
+                        <z>0</z>
+                        <width>32.412628174</width>
+                        <height>48.809604645</height>
+                        <depth>0</depth>
+                        <hotspotX>0.505882382</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="Popup_personagem_morreu" sid="9837698125129527">
+        <layer name="Popup_personagem_morreu" sid="7940059884476837">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -349,7 +523,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_popup_gameover" uid="11">
+                <instance type="background_popup_gameover" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -371,7 +545,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cabeca_dino_gameover" uid="19">
+                <instance type="cabeca_dino_gameover" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -393,7 +567,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GameOverTextoPopup" uid="20">
+                <instance type="GameOverTextoPopup" uid="26">
                     <properties>
                         <text>Game  Over</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -420,7 +594,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ContinuarJogando" uid="21">
+                <instance type="ContinuarJogando" uid="27">
                     <properties>
                         <text>Continuar jogando?</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -447,7 +621,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_moedas" uid="22">
+                <instance type="label_moedas" uid="28">
                     <properties>
                         <text>Moedas:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -474,7 +648,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins" uid="23">
+                <instance type="icone_coins" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -496,7 +670,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="X_fim_jogo_coins" uid="24">
+                <instance type="X_fim_jogo_coins" uid="30">
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -512,7 +686,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>326</x>
-                        <y>163</y>
+                        <y>168</y>
                         <z>0</z>
                         <width>21.273611069</width>
                         <height>39.090835571</height>
@@ -523,7 +697,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="moedinha_menor" uid="27">
+                <instance type="moedinha_menor" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -548,7 +722,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Menos50" uid="28">
+                <instance type="Menos50" uid="66">
                     <properties>
                         <text>- 50</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -578,7 +752,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Botao_sim" uid="25">
+                <instance type="Botao_sim" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -600,7 +774,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_nao" uid="26">
+                <instance type="botao_nao" uid="68">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -622,7 +796,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sim" uid="29">
+                <instance type="sim" uid="69">
                     <properties>
                         <text>Sim</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -649,7 +823,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="nao" uid="30">
+                <instance type="nao" uid="70">
                     <properties>
                         <text>Não</text>
                         <initial-visibility>Visible</initial-visibility>

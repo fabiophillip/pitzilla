@@ -144,16 +144,22 @@
             </actions>
         </event-block>
         <comment>If the player falls off the bottom of the screen, restart the game.</comment>
-        <event-block sid="1146874530145051">
+        <event-block sid="9822142259029015">
             <conditions>
-                <condition id="-2" name="Compare Y" sid="5619089137434497" type="Player">
+                <condition id="-2" name="Compare Y" sid="9245276389906795" type="Player">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Y co-ordinate">LayoutHeight</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="376388919142193" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-21" name="Reset global variables" sid="8778404971489387" type="System" />
-                <action id="-26" name="Restart layout" sid="8516441725984547" type="System" />
+                <action disabled="1" id="-26" name="Restart layout" sid="6003235485134577" type="System" />
+                <action id="-13" name="Set boolean" sid="4442050267951159" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <comment>Due to the acceleration of the platform movement, we need to do some tweaks to make sure the player doesn&apos;t gradually get pushed off to the left of the screen over time.</comment>
@@ -1188,6 +1194,558 @@
                 <action id="-9" name="Set value" sid="6183038096504931" type="System">
                     <param id="0" name="Variable">item_aleatorio_timer</param>
                     <param id="1" name="Value">1000 +  (random(0,100))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7888636729667914">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4194077284104755" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="5546128630739653" type="System">
+                    <param id="0" name="Variable">tempo_ate_aparecer_dinoobstaculo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3492979948851861">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7944479685673523" type="System">
+                    <param id="0" name="Variable">tempo_ate_aparecer_dinoobstaculo</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8883423437540425" type="System">
+                    <param id="0" name="Object to create">DinoObstaculo</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="X">1000</param>
+                    <param id="3" name="Y">-74</param>
+                </action>
+                <action id="-10" name="Set value" sid="3435645498904295" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Value">round(random(1))</param>
+                </action>
+                <action id="-9" name="Set value" sid="5431832284045806" type="System">
+                    <param id="0" name="Variable">tempo_ate_aparecer_dinoobstaculo</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9734210551795786">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="6014045229942774" type="DinoObstaculo">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">-Self.Width</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7523057584666431" type="DinoObstaculo" />
+            </actions>
+        </event-block>
+        <event-block sid="1705337165527828">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8585087518884138" type="Player">
+                    <param id="0" name="Object">DinoObstaculo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6469186075519193" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;espinhudo&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="404850792241471" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="451566862835988" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6310106052125979">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2251413337476536" type="System">
+                    <param id="0" name="Interval (seconds)">0.01</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="2534294783278416" type="DinoObstaculo">
+                    <param id="0" name="Object">Block</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="4035400020265365" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="4994252017344206" type="DinoObstaculo">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4527550130003734">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3713631341656011" type="DinoObstaculo">
+                    <param id="0" name="Object">Block</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1698493560226538" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;espinhudo&quot;</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="7388536108231855" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3910811052776852" type="DinoObstaculo">
+                    <param id="0" name="Y">Block.Y - 30</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="7350736776504087" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8390818649186217">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7985590471246602" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6027998952696778" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-10" name="Set value" sid="1114319540589293" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Value">&quot;espinhudo&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="6094533478038981" type="DinoObstaculo">
+                    <param id="0" name="Animation">&quot;espinhudo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="7740275781136179" type="DinoObstaculo">
+                    <param id="0" name="X">1000</param>
+                </action>
+                <action id="-2" name="Set Y" sid="59108937797425" type="DinoObstaculo">
+                    <param id="0" name="Y">-74</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7832929591667341" type="DinoObstaculo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7489094810671547">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6675576211406767" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6157205382779367" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-10" name="Set value" sid="5579130137772702" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Value">&quot;pterodatilo&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="3309483270992358" type="DinoObstaculo">
+                    <param id="0" name="Animation">&quot;alvo_pterodatilo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="5548307899906423" type="DinoObstaculo">
+                    <param id="0" name="X">1000</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1863891998076015" type="DinoObstaculo">
+                    <param id="0" name="Y">-74</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="6707305314993053" type="DinoObstaculo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2310135217820971">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2227027071150822" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7408569303429271" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-10" name="Set value" sid="1873687332364861" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Value">&quot;pterodatilo_perto_chao&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="1264374184290242" type="DinoObstaculo">
+                    <param id="0" name="Animation">&quot;pterodatilo_perto_chao&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="8565490283616787" type="DinoObstaculo">
+                    <param id="0" name="X">1000</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9254894280598034" type="DinoObstaculo">
+                    <param id="0" name="Y">-74</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="5128448135748249" type="DinoObstaculo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8612185933824136">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6518462212831652" type="DinoObstaculo">
+                    <param id="0" name="Object">Block</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3966660823618657" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;pterodatilo&quot;</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="9016205955635763" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="7239806472615164" type="DinoObstaculo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8208276017774562" type="DinoObstaculo">
+                    <param id="0" name="Y">DinoObstaculo.Y + 4</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="1990199638544732" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4336867959204693">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4445619836501282" type="Player">
+                    <param id="0" name="Object">DinoObstaculo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2530605784088622" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;pterodatilo&quot;</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="5050085176274748" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="523383273169402" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="5523495560839912" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4933362984827216">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1498903019616616" type="DinoObstaculo">
+                    <param id="0" name="Object">Block</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7325935448139657" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;pterodatilo_perto_chao&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="2968376083645192" type="DinoObstaculo">
+                    <param id="0" name="Y">DinoObstaculo.Y - 93</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="7873363435353468" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3634188417603729">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9696206211067466" type="Player">
+                    <param id="0" name="Object">DinoObstaculo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8025372171436409" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;pterodatilo_perto_chao&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9422140428412523" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="2591965638828557" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8853352040055965">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4450294277068781" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="7612301553412502" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5620376991671353">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5373747125104428" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="8823650036929612" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="800324548649904">
+            <conditions>
+                <condition id="9" name="On item exists" sid="532181183025925" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="3554595502797047" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="-9" name="Set value" sid="8561337857240912" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="0" name="Set text" sid="2104911706926371" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; LocalStorage.ItemValue</param>
+                </action>
+                <action id="-5" name="Set width" sid="4159551222041631" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="5394287562456564" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="386704963688434" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2117830016928788">
+            <conditions>
+                <condition id="10" name="On item missing" sid="7215015635060211" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="7862907447967761" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9515701013308616" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="1433352441380208" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; 0</param>
+                </action>
+                <action id="-5" name="Set width" sid="4079108664785854" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="7668697362336748" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="437949718540188" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9441724253451098">
+            <conditions>
+                <condition id="3" name="On touched object" sid="844736090826031" type="Touch">
+                    <param id="0" name="Object">botao_nao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="8203053482565879" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6637351751818198" type="System">
+                    <param id="0" name="Layout">GameOver</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7377837637716968">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6217592378796773" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="4836339242793848" type="Botao_sim">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3940936351997786" type="sim">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="796774392425465">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8647151676065014" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="4052924711879717" type="Botao_sim">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2076214359867412" type="sim">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6498659190616649">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9253228074125691" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2420630715352262" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="28608068580816" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 50</param>
+                </action>
+                <action id="0" name="Set item" sid="2123611447087408" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set text" sid="1030946239913014" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; LocalStorage.ItemValue</param>
+                </action>
+                <action id="-2" name="Set Y" sid="462611442953592" type="Player">
+                    <param id="0" name="Y">LayoutHeight - 20000</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="7750049592915151" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5182258842934038" type="CliqueEmUmaPosicaoParaReviverPersonagem">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2131785572250031" type="System">
+                    <param id="0" name="Variable">em_momento_reviver_personagem</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6479176924062734">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6224711429928661" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2659502253479266" type="CliqueEmUmaPosicaoParaReviverPersonagem">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6275535202914182" type="System">
+                    <param id="0" name="Variable">em_momento_reviver_personagem</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1684359260020006">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="695493783527885" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="578349694898799" type="System">
+                    <param id="0" name="Variable">em_momento_reviver_personagem</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="3600088068463599" type="Player">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="5940773241739728" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="429229655057142" type="System">
+                    <param id="0" name="Variable">em_momento_reviver_personagem</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="920986886433975" type="CliqueEmUmaPosicaoParaReviverPersonagem">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="360401194583322" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2187338810173303">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="4807948079741521" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4275599667862945" type="System">
+                    <param id="0" name="Variable">em_momento_reviver_personagem</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="7003668282644819" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="1914947400250255" type="System">
+                    <param id="0" name="Time scale">0.0</param>
+                </action>
+                <action id="0" name="Set text" sid="7445751178818787" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; coin</param>
+                </action>
+                <action id="-5" name="Set width" sid="5734099489309382" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="2955450400751398" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="2649064259107423" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
                 </action>
             </actions>
         </event-block>

@@ -11,7 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Copia do layout1</layout>
-        <event-sheet active="1" order="1">Copia do event sheet 1</event-sheet>
+        <layout order="3">Layout 1</layout>
+        <event-sheet order="1">Copia do event sheet 1</event-sheet>
+        <event-sheet active="1" order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,6 +31,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/DinoObstaculo/" />
+        <folder expanded="1" path="animation-folder/Pterodatilo/" />
+        <folder expanded="1" path="animation-folder/icone_coins/" />
+        <folder expanded="1" path="animation-folder/background_popup_gameover/" />
+        <folder expanded="1" path="animation-folder/cabeca_dino_gameover/" />
+        <folder expanded="1" path="animation-folder/moedinha_menor/" />
+        <folder expanded="1" path="animation-folder/Botao_sim/" />
+        <folder expanded="1" path="animation-folder/botao_nao/" />
+        <folder expanded="1" path="animation-folder/BackgroundNormal/" />
+        <folder expanded="1" path="animation-folder/Botao_facebook/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/botao_jogar_novamente/" />
+        <folder expanded="1" path="animation-folder/botao_menu_inicial/" />
         <folder expanded="1" path="animation-folder/pittsburg/" />
         <folder expanded="1" path="animation-folder/fundo_barra_pitzilla/" />
         <folder expanded="1" path="animation-folder/frente_barra_pitzilla/" />
