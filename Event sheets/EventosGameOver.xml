@@ -111,7 +111,18 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-2" name="Go to layout" sid="906486222652996" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
                 <action id="-21" name="Reset global variables" sid="8496664506079517" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="4908978734670577">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9104440646578451" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="2425904719057695" type="Audio" />
             </actions>
         </event-block>
     </events>
