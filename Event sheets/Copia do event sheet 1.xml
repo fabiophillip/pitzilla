@@ -1116,7 +1116,7 @@
             <actions>
                 <action id="-23" name="Move at angle" sid="8532030105303944" type="pittsburg">
                     <param id="0" name="Angle">angle(pittsburg.X, pittsburg.Y, Player.X, Player.Y)</param>
-                    <param id="1" name="Distance">2</param>
+                    <param id="1" name="Distance">4</param>
                 </action>
             </actions>
         </event-block>
@@ -1746,6 +1746,10 @@
                 <action id="-3" name="Set position" sid="2649064259107423" type="icone_coins">
                     <param id="0" name="X">X_fim_jogo_coins.X +50</param>
                     <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="7872072336852257" type="Player">
+                    <param id="0" name="Instance variable">virou_pitts_batata</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
