@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos_lojinha_musica</name>
+    <events>
+        <variable constant="0" name="ja_comprou_musica_0" sid="4821216780495423" static="0" type="text">&quot;false&quot;</variable>
+        <variable constant="0" name="ja_comprou_musica_1" sid="827380781809622" static="0" type="text">&quot;false&quot;</variable>
+        <variable constant="0" name="ja_comprou_musica_2" sid="2761238676852717" static="0" type="text">&quot;false&quot;</variable>
+        <variable constant="0" name="ja_comprou_musica_3" sid="3819152984715687" static="0" type="text">&quot;false&quot;</variable>
+        <variable constant="0" name="ja_comprou_musica_4" sid="2061062065840115" static="0" type="text">&quot;false&quot;</variable>
+        <variable constant="0" name="ja_comprou_musica_5" sid="3324005071508237" static="0" type="text">&quot;false&quot;</variable>
+        <variable constant="0" name="ja_comprou_musica_6" sid="37849987777983" static="0" type="text">&quot;false&quot;</variable>
+        <variable constant="0" name="numero_musica_tocando_lojinha" sid="6680400371914347" static="0" type="number">0</variable>
+        <event-block sid="7453100819620664">
+            <conditions>
+                <condition id="17" name="On tap object" sid="4799251260974606" type="Touch">
+                    <param id="0" name="Object">Botao_voltar_lojinha_musica</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1790435990507006" type="System">
+                    <param id="0" name="Layout">Lojinha</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5428078466373953">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6406132203035302" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="2758007204882227" type="Audio" />
+                <action id="-9" name="Set value" sid="6818104635144505" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1907147571794259">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4585566888739385" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9729182270510658" type="Nome_musica">
+                    <param id="0" name="Text">&quot;So good&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="2350283690451069" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="1375980918307623" type="quanto_vale_musica_lojinha">
+                    <param id="0" name="Text">&quot;040&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3181005175680049">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4457418419000506" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9323328847167571" type="Nome_musica">
+                    <param id="0" name="Text">&quot;A day in the sun&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="6030248223875248" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;a_day_in_the_sun&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="2017276661455497" type="quanto_vale_musica_lojinha">
+                    <param id="0" name="Text">&quot;080&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8998895219547959">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8433245671479375" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8965399302559489" type="Nome_musica">
+                    <param id="0" name="Text">&quot;Bold valor&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="3057890449742575" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;bold_valor&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="8400767356961948" type="quanto_vale_musica_lojinha">
+                    <param id="0" name="Text">&quot;120&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4685506788198993">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5335217433876636" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6607360610485689" type="Nome_musica">
+                    <param id="0" name="Text">&quot;Fourth and two&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="1775219351872986" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;fourth_and_two&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="9370943524370894" type="quanto_vale_musica_lojinha">
+                    <param id="0" name="Text">&quot;160&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5116505230123175">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2853381876180965" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6663278627766473" type="Nome_musica">
+                    <param id="0" name="Text">&quot;Goofy loop&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="8624706091957152" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;goofy_loop&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5482287770097852" type="quanto_vale_musica_lojinha">
+                    <param id="0" name="Text">&quot;200&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3347726803374468">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7059274035611071" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2142013446704173" type="Nome_musica">
+                    <param id="0" name="Text">&quot;Sailor&apos;s piccolo&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="6295311155049428" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;sailor_apostrofo_s_piccolo&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="812793503175105" type="quanto_vale_musica_lojinha">
+                    <param id="0" name="Text">&quot;240&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8603620385771887">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2780965456881892" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="766267511568632" type="Nome_musica">
+                    <param id="0" name="Text">&quot;Electro go funky&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="7011244014824557" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="6680243837827044" type="quanto_vale_musica_lojinha">
+                    <param id="0" name="Text">&quot;280&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="624843239389015">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1930577465796178" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1547461452229923" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1537781305526942">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2341041824569101" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="345325098896211" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1797338131607296">
+            <conditions>
+                <condition id="17" name="On tap object" sid="420467756268899" type="Touch">
+                    <param id="0" name="Object">botao_direita_comprar_musica</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6872722183434714" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Value">numero_musica_tocando_lojinha + 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3457692810245738">
+            <conditions>
+                <condition id="17" name="On tap object" sid="2207475680533051" type="Touch">
+                    <param id="0" name="Object">botao_esquerda_comprar_musica</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9873082827287538" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Value">numero_musica_tocando_lojinha - 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1887184702203693">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7760328895489983" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="9207614345107057" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="4694014452726602" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="1085473040493568" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="6801232527869492" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="6791607905922534" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="464872993238597" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="5238512904448624" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="281833871713867" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1447970580156727">
+            <conditions>
+                <condition id="9" name="On item exists" sid="9487280289496742" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1617566576027538" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(LocalStorage.ItemValue)</param>
+                </action>
+                <action id="-5" name="Set width" sid="8422211314036499" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="5124369901608705" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="2189413941076066" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="-9" name="Set value" sid="3642339719187187" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">float(LocalStorage.ItemValue)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7558176851315804">
+            <conditions>
+                <condition id="10" name="On item missing" sid="1009321713910281" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2034339267090162" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; 0</param>
+                </action>
+                <action id="-5" name="Set width" sid="8247886778859203" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="913697639344473" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="8145829235278929" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="0" name="Set item" sid="6356898641792368" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3689563261904032" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2078308549470898">
+            <conditions>
+                <condition id="9" name="On item exists" sid="2979140234800989" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4433075199339105" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7914435881313805">
+            <conditions>
+                <condition id="9" name="On item exists" sid="2813407213139471" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5868278035681283" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1794082090108728">
+            <conditions>
+                <condition id="9" name="On item exists" sid="2811126385750008" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9157621875424506" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3364873763737814">
+            <conditions>
+                <condition id="9" name="On item exists" sid="8423838594074387" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="47945908665136" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5646572805775403">
+            <conditions>
+                <condition id="9" name="On item exists" sid="9470891639723796" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4130987184615411" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9552644474984922">
+            <conditions>
+                <condition id="9" name="On item exists" sid="2077248672361204" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9077379430446113" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8632748523754753">
+            <conditions>
+                <condition id="9" name="On item exists" sid="1415706935392052" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="114345859754933" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3983823108112105">
+            <conditions>
+                <condition id="10" name="On item missing" sid="5165159170471304" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="7946827899125025" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8158481446736495">
+            <conditions>
+                <condition id="10" name="On item missing" sid="5333013300115763" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="5939660798912625" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3877771679964915">
+            <conditions>
+                <condition id="10" name="On item missing" sid="368349721973671" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="274918625875564" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4761728218490434">
+            <conditions>
+                <condition id="10" name="On item missing" sid="8786752450739057" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="5478052499528224" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2484873158141475">
+            <conditions>
+                <condition id="10" name="On item missing" sid="5529958099103551" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="7265640531915213" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2893696547946061">
+            <conditions>
+                <condition id="10" name="On item missing" sid="7429837915390918" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="7626872915887967" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="36834705223034">
+            <conditions>
+                <condition id="10" name="On item missing" sid="285474019815068" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="6016989548965224" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5720854401543899">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7421725960614311" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1377253610706898" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3574660692887572" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4930793929023668">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2151832744731902" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8643637976522882" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3632006344143339" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8270961982731022">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3045542275421019" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1031142697532475" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1012893722372441" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228508581442633">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6433899053328383" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="739307277358161" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="6329178765156472" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7895583857809258">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5260780195954799" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="338758345748316" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="4158427974188898" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7816778347490811">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5730060109757804" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8645564763823627" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="4356205100561215" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7977414587093612">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5797960718919172" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2431206261100008" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="7290402184951861" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7388726759913347">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2961623384079297" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2063555177996448" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="6485883494832391" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7653109514734387">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6168859704336314" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5185103729436474" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3625122922540243" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6988129850491194">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3406095150978856" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9260270291632946" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1102877620517529" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6120760835112335">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5505781965269847" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="212427447924067" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="5558223918491268" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7802522361080573">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7980437420325306" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1918327479289295" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3563836328862693" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5946918708849451">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1274846872650005" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2791558365278984" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="5448277043737702" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="416969907732073">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9170109377089675" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7046435833952444" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="6846870993319573" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2805040624737446">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1100363968427898" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6168880508775469" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3205011926815875" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="625020077869832" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6864414979329676" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 40</param>
+                </action>
+                <action id="0" name="Set item" sid="220994710405257" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="7911902109076497" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="1716036102174367" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5191555156434785" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8053460492714387">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9535458629082132" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="553624964505819" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9173250099484483" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">80</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9339145206995149" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6048279622886374" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 80</param>
+                </action>
+                <action id="0" name="Set item" sid="3056273278506612" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="7972692053667983" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="2082296532294453" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="4452131434701586" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2700643861756889">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3772002176547803" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4849883018899163" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2861564059339538" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">120</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5456140854760904" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6843467959022459" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 120</param>
+                </action>
+                <action id="0" name="Set item" sid="5390159423225297" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="254161554762487" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="6942626332276312" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="1582930817871775" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5594886340028015">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3280060372889558" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9399059714044778" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6423722242925561" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">160</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7421956511518536" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5890160118359997" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 160</param>
+                </action>
+                <action id="0" name="Set item" sid="2031605763177376" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="1818230637258709" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="2034937799378807" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="270528513722334" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="48441706285677">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3444363469573387" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3493382341002458" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1477599349641784" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">200</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7992118626826621" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2361824366733065" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 200</param>
+                </action>
+                <action id="0" name="Set item" sid="6535348752677476" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="8686561254573148" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="7874988916511482" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5478453248516343" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2317304066017759">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8794224290669273" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2269188930692261" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3228070817218276" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">240</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5330331357441479" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5124894962493266" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 240</param>
+                </action>
+                <action id="0" name="Set item" sid="6734554381267207" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="3088597091135958" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9242017688680533" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="9139513386724594" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="809490147318316">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3640840817492014" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5304686381563746" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5176104660091201" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">280</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7772237414684832" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7967354734403579" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 280</param>
+                </action>
+                <action id="0" name="Set item" sid="7021291193938011" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="9893435805721359" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="6262005149216579" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="2059956978210129" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>GameOver</name>
-    <sid>2458445318839661</sid>
-    <event-sheet>EventosGameOver</event-sheet>
+    <name>Lojinha_musica</name>
+    <sid>1846256339197384</sid>
+    <event-sheet>Eventos_lojinha_musica</event-sheet>
     <size>
         <width>630</width>
         <height>360</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="4401368447649209">
+        <layer name="Layer 0" sid="3842664266969136">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="35">
+                <instance type="BackgroundNormal" uid="85">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,10 +39,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>313</x>
+                        <x>313.5</x>
                         <y>180.5</y>
                         <z>0</z>
-                        <width>636</width>
+                        <width>637</width>
                         <height>377</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -51,9 +51,58 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GameOverTextoPopup" uid="36">
+                <instance type="Botao_voltar_lojinha_musica" uid="86">
                     <properties>
-                        <text>Game  Over</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>311</x>
+                        <y>305</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>72</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Texto_voltar_lojinha_musica" uid="87">
+                    <properties>
+                        <text>Voltar</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Calibri,-29,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>273</x>
+                        <y>285</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>56</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Titulo_tela_musica" uid="88">
+                    <properties>
+                        <text>Música</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Calibri,-35,700,0</font>
                         <color>20,35,146</color>
@@ -66,10 +115,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>202</x>
+                        <x>262</x>
                         <y>13</y>
                         <z>0</z>
-                        <width>276</width>
+                        <width>200</width>
                         <height>51</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -78,11 +127,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DistanciaPercorrida" uid="37">
+                <instance type="Musica_de" uid="89">
                     <properties>
-                        <text>Distância percorrida:</text>
+                        <text>Música de:</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Calibri,-27,700,0</font>
+                        <font>Calibri,-16,700,0</font>
                         <color>20,35,146</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -93,11 +142,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>20</x>
-                        <y>71</y>
+                        <x>416</x>
+                        <y>287</y>
                         <z>0</z>
-                        <width>576</width>
-                        <height>37</height>
+                        <width>200</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -105,11 +154,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_moedas" uid="38">
+                <instance type="link_free_sfx" uid="90">
                     <properties>
-                        <text>Moedas:</text>
+                        <text>http://www.freesfx.co.uk</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Calibri,-27,700,0</font>
+                        <font>Calibri,-16,700,0</font>
                         <color>20,35,146</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -120,11 +169,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>20</x>
-                        <y>109</y>
+                        <x>426</x>
+                        <y>306</y>
                         <z>0</z>
-                        <width>152.273925781</width>
-                        <height>45.454559326</height>
+                        <width>211</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -132,7 +181,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins" uid="39">
+                <instance type="botao_comprar_musica" uid="91">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -142,90 +191,68 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>229</x>
-                        <y>120</y>
+                        <x>311</x>
+                        <y>107</y>
+                        <z>0</z>
+                        <width>108</width>
+                        <height>108</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="quanto_vale_musica_lojinha" uid="92">
+                    <properties>
+                        <text>050</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29,700,0</font>
+                        <color>20,35,146</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>287</x>
+                        <y>207</y>
+                        <z>0</z>
+                        <width>55</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="icone_coins_nao_se_mexe" uid="93">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>365</x>
+                        <y>223</y>
                         <z>0</z>
                         <width>45</width>
                         <height>45</height>
                         <depth>0</depth>
-                        <hotspotX>0.51111114</hotspotX>
-                        <hotspotY>0.51111114</hotspotY>
+                        <hotspotX>0.511111021</hotspotX>
+                        <hotspotY>0.511111021</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="X_fim_jogo_coins" uid="40">
-                    <properties>
-                        <text>X</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Calibri,-27,700,0</font>
-                        <color>20,35,146</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>191</x>
-                        <y>108</y>
-                        <z>0</z>
-                        <width>21.273611069</width>
-                        <height>39.090835571</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Botao_facebook" uid="41">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>51</x>
-                        <y>183</y>
-                        <z>0</z>
-                        <width>60</width>
-                        <height>60</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="botao_jogar_novamente" uid="42">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>122</x>
-                        <y>306</y>
-                        <z>0</z>
-                        <width>200</width>
-                        <height>72</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="botao_menu_inicial" uid="43">
+                <instance type="botao_direita_comprar_musica" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -236,10 +263,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>428</x>
-                        <y>306</y>
+                        <y>109</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>72</height>
+                        <width>88</width>
+                        <height>88</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -247,12 +274,34 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="jogar_novamente" uid="44">
+                <instance type="botao_esquerda_comprar_musica" uid="95">
                     <properties>
-                        <text>Jogar novamente</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Calibri,-21,700,0</font>
-                        <color>255,255,255</color>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>193</x>
+                        <y>109</y>
+                        <z>0</z>
+                        <width>88</width>
+                        <height>88</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Nome_musica" uid="96">
+                    <properties>
+                        <text>Nome música</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-21,700,0</font>
+                        <color>20,35,146</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -262,11 +311,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>46</x>
-                        <y>291</y>
+                        <x>241</x>
+                        <y>173</y>
                         <z>0</z>
-                        <width>202</width>
-                        <height>40</height>
+                        <width>200</width>
+                        <height>33</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -274,12 +323,34 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="menu_inicial" uid="45">
+                <instance type="Sprite3" uid="97">
                     <properties>
-                        <text>Menu inicial</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Calibri,-21,700,0</font>
-                        <color>255,255,255</color>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>312</x>
+                        <y>109</y>
+                        <z>0</z>
+                        <width>66</width>
+                        <height>69</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507246375</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="label_moedas" uid="99">
+                    <properties>
+                        <text>Moedas:</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-27,400,0</font>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -289,11 +360,60 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>373</x>
-                        <y>291</y>
+                        <x>7</x>
+                        <y>15</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
+                        <width>152.273925781</width>
+                        <height>45.454559326</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="icone_coins" uid="100">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>216</x>
+                        <y>26</y>
+                        <z>0</z>
+                        <width>45</width>
+                        <height>45</height>
+                        <depth>0</depth>
+                        <hotspotX>0.51111114</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="X_fim_jogo_coins" uid="101">
+                    <properties>
+                        <text>X</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-27,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>178</x>
+                        <y>14</y>
+                        <z>0</z>
+                        <width>21.273611069</width>
+                        <height>39.090835571</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

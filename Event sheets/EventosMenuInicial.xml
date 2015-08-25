@@ -72,5 +72,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="4973847984357753">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1537337664480288" type="Touch">
+                    <param id="0" name="Object">Botao_lojinha</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7332665956121653" type="System">
+                    <param id="0" name="Layout">Lojinha</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

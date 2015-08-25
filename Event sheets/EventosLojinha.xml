@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosLojinha</name>
+    <events>
+        <event-block sid="1778794852680182">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8420470311401222" type="Touch">
+                    <param id="0" name="Object">Botao_sublojinha_musica</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3804686607215382" type="System">
+                    <param id="0" name="Layout">Lojinha_musica</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3990209200356156">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9773069843918683" type="Touch">
+                    <param id="0" name="Object">botao_voltar_para_menu_inicial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8961441463985204" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

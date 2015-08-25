@@ -781,6 +781,10 @@
                     <param id="0" name="Instance variable">dino_crescendo</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-13" name="Set boolean" sid="3286587976214712" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="173758821468729">
@@ -983,6 +987,10 @@
                     <param id="0" name="Instance variable">virou_pitzilla</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-13" name="Set boolean" sid="9519595627821156" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <comment>parte tentando fazer dino parar pra crescer</comment>
@@ -1042,7 +1050,7 @@
                 <condition id="-8" name="Is boolean instance variable set" sid="4468996471868146" type="Player">
                     <param id="0" name="Instance variable">virou_dino_chicken</param>
                 </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="840654463165689" type="Player">
+                <condition disabled="1" id="-8" name="Is boolean instance variable set" sid="840654463165689" type="Player">
                     <param id="0" name="Instance variable">dino_perdendo_poder_pittschicken</param>
                 </condition>
             </conditions>
@@ -1256,6 +1264,9 @@
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1069846963269322" type="Player">
                     <param id="0" name="Instance variable">morto</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3847712482169291" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-13" name="Set boolean" sid="3478379067119537" type="Player">
@@ -1446,6 +1457,9 @@
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4484220474089799" type="Player">
                     <param id="0" name="Instance variable">morto</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="630637691214155" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-13" name="Set boolean" sid="9675667653272599" type="Player">
@@ -1487,6 +1501,9 @@
                 </condition>
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8625214179036096" type="Player">
                     <param id="0" name="Instance variable">morto</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2152127854716188" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
                 </condition>
             </conditions>
             <actions>
@@ -1709,6 +1726,13 @@
                 <action id="-13" name="Set time scale" sid="4405836522600627" type="System">
                     <param id="0" name="Time scale">1.0</param>
                 </action>
+                <action id="7" name="Play (by name)" sid="8612961980315854" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6377907573069098">
@@ -1743,6 +1767,75 @@
                 <action id="-3" name="Set position" sid="8860590541881288" type="icone_coins">
                     <param id="0" name="X">X_fim_jogo_coins.X +50</param>
                     <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="33" name="Stop all" sid="6434807979233247" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="3543571080675049">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4034823921542238" type="Player">
+                    <param id="0" name="Object">DinoObstaculo</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="5727679383938183" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="736720565991007" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">acertado_por_pitzilla</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1718646194554906">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8555663698044089" type="System">
+                    <param id="0" name="Interval (seconds)">0.01</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="3902715690151786" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">acertado_por_pitzilla</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="1064587167767929" type="DinoObstaculo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="4300747357985597" type="DinoObstaculo">
+                    <param id="0" name="X">DinoObstaculo.X + 5</param>
+                </action>
+                <action id="-2" name="Set Y" sid="4613477054805146" type="DinoObstaculo">
+                    <param id="0" name="Y">DinoObstaculo.Y - 10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="110426231917763">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2151923831045186" type="DinoObstaculo">
+                    <param id="0" name="Object">batata</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="2284882769162186" type="DinoObstaculo">
+                    <param id="0" name="Object">pittsburg</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="9675662479624866" type="DinoObstaculo">
+                    <param id="0" name="Object">pittschicken</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4216711702036734" type="DinoObstaculo" />
+            </actions>
+        </event-block>
+        <event-block sid="5251344933329641">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="236919225285898" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="1027203628249952" type="Audio" />
+                <action id="7" name="Play (by name)" sid="4659839007369755" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
