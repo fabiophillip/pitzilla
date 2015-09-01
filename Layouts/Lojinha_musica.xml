@@ -246,8 +246,8 @@
                         <width>45</width>
                         <height>45</height>
                         <depth>0</depth>
-                        <hotspotX>0.511111021</hotspotX>
-                        <hotspotY>0.511111021</hotspotY>
+                        <hotspotX>0.51111114</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -323,7 +323,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="97">
+                <instance type="icone_musica_na_lojinha_musica" uid="97">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

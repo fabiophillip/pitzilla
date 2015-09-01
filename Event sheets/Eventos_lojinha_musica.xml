@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos_lojinha_musica</name>
     <events>
+        <variable constant="0" name="mudar_musica_atual_lojinha" sid="1131735518280081" static="0" type="number">1</variable>
         <variable constant="0" name="ja_comprou_musica_0" sid="4821216780495423" static="0" type="text">&quot;false&quot;</variable>
         <variable constant="0" name="ja_comprou_musica_1" sid="827380781809622" static="0" type="text">&quot;false&quot;</variable>
         <variable constant="0" name="ja_comprou_musica_2" sid="2761238676852717" static="0" type="text">&quot;false&quot;</variable>
@@ -18,6 +19,7 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="7823787518332816" type="Audio" />
                 <action id="-2" name="Go to layout" sid="1790435990507006" type="System">
                     <param id="0" name="Layout">Lojinha</param>
                 </action>
@@ -33,6 +35,10 @@
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="7745440624549247" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1907147571794259">
@@ -42,20 +48,30 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="1223797212753883" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="9729182270510658" type="Nome_musica">
                     <param id="0" name="Text">&quot;So good&quot;</param>
                 </action>
+                <action id="33" name="Stop all" sid="5198792844302112" type="Audio" />
                 <action id="7" name="Play (by name)" sid="2350283690451069" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                    <param id="1" name="Audio file name">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
                     <param id="3" name="Loop">1</param>
                     <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="1375980918307623" type="quanto_vale_musica_lojinha">
                     <param id="0" name="Text">&quot;040&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="685803035070955" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -66,11 +82,17 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="4265345242265627" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="9323328847167571" type="Nome_musica">
                     <param id="0" name="Text">&quot;A day in the sun&quot;</param>
                 </action>
+                <action id="33" name="Stop all" sid="5427059406084603" type="Audio" />
                 <action id="7" name="Play (by name)" sid="6030248223875248" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;a_day_in_the_sun&quot;</param>
@@ -81,6 +103,10 @@
                 <action id="0" name="Set text" sid="2017276661455497" type="quanto_vale_musica_lojinha">
                     <param id="0" name="Text">&quot;080&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="3731141876053883" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8998895219547959">
@@ -90,11 +116,17 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="8658837203556583" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="8965399302559489" type="Nome_musica">
                     <param id="0" name="Text">&quot;Bold valor&quot;</param>
                 </action>
+                <action id="33" name="Stop all" sid="7764483618575737" type="Audio" />
                 <action id="7" name="Play (by name)" sid="3057890449742575" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;bold_valor&quot;</param>
@@ -105,6 +137,10 @@
                 <action id="0" name="Set text" sid="8400767356961948" type="quanto_vale_musica_lojinha">
                     <param id="0" name="Text">&quot;120&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="6234547162257909" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4685506788198993">
@@ -114,11 +150,17 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="5113103217040525" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="6607360610485689" type="Nome_musica">
                     <param id="0" name="Text">&quot;Fourth and two&quot;</param>
                 </action>
+                <action id="33" name="Stop all" sid="8592599537073368" type="Audio" />
                 <action id="7" name="Play (by name)" sid="1775219351872986" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;fourth_and_two&quot;</param>
@@ -129,6 +171,10 @@
                 <action id="0" name="Set text" sid="9370943524370894" type="quanto_vale_musica_lojinha">
                     <param id="0" name="Text">&quot;160&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="2125314048007505" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5116505230123175">
@@ -138,11 +184,17 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">4</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="9854377018183244" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="6663278627766473" type="Nome_musica">
                     <param id="0" name="Text">&quot;Goofy loop&quot;</param>
                 </action>
+                <action id="33" name="Stop all" sid="1521149482815734" type="Audio" />
                 <action id="7" name="Play (by name)" sid="8624706091957152" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;goofy_loop&quot;</param>
@@ -153,6 +205,10 @@
                 <action id="0" name="Set text" sid="5482287770097852" type="quanto_vale_musica_lojinha">
                     <param id="0" name="Text">&quot;200&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="3835556353202849" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3347726803374468">
@@ -162,11 +218,17 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">5</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="5662592801498499" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="2142013446704173" type="Nome_musica">
                     <param id="0" name="Text">&quot;Sailor&apos;s piccolo&quot;</param>
                 </action>
+                <action id="33" name="Stop all" sid="4036869077021656" type="Audio" />
                 <action id="7" name="Play (by name)" sid="6295311155049428" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;sailor_apostrofo_s_piccolo&quot;</param>
@@ -177,6 +239,10 @@
                 <action id="0" name="Set text" sid="812793503175105" type="quanto_vale_musica_lojinha">
                     <param id="0" name="Text">&quot;240&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="2425218450496967" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8603620385771887">
@@ -186,11 +252,17 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">6</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="9569061838623692" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="766267511568632" type="Nome_musica">
                     <param id="0" name="Text">&quot;Electro go funky&quot;</param>
                 </action>
+                <action id="33" name="Stop all" sid="5579123499183805" type="Audio" />
                 <action id="7" name="Play (by name)" sid="7011244014824557" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
@@ -200,6 +272,10 @@
                 </action>
                 <action id="0" name="Set text" sid="6680243837827044" type="quanto_vale_musica_lojinha">
                     <param id="0" name="Text">&quot;280&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="2874687217845498" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -244,6 +320,10 @@
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
                     <param id="1" name="Value">numero_musica_tocando_lojinha + 1</param>
                 </action>
+                <action id="-9" name="Set value" sid="7360870395997301" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3457692810245738">
@@ -256,6 +336,10 @@
                 <action id="-9" name="Set value" sid="9873082827287538" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
                     <param id="1" name="Value">numero_musica_tocando_lojinha - 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9473916396798203" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -547,6 +631,9 @@
                 <action id="-16" name="Set opacity" sid="3574660692887572" type="botao_comprar_musica">
                     <param id="0" name="Opacity">20</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="3831415063665653" type="icone_musica_na_lojinha_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4930793929023668">
@@ -564,6 +651,9 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="3632006344143339" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="5544114890851037" type="icone_musica_na_lojinha_musica">
                     <param id="0" name="Opacity">20</param>
                 </action>
             </actions>
@@ -585,6 +675,9 @@
                 <action id="-16" name="Set opacity" sid="1012893722372441" type="botao_comprar_musica">
                     <param id="0" name="Opacity">20</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="4780036008504621" type="icone_musica_na_lojinha_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="228508581442633">
@@ -602,6 +695,9 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="6329178765156472" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3718138032779338" type="icone_musica_na_lojinha_musica">
                     <param id="0" name="Opacity">20</param>
                 </action>
             </actions>
@@ -623,6 +719,9 @@
                 <action id="-16" name="Set opacity" sid="4158427974188898" type="botao_comprar_musica">
                     <param id="0" name="Opacity">20</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="5778534979233638" type="icone_musica_na_lojinha_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7816778347490811">
@@ -640,6 +739,9 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="4356205100561215" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="4090977542340398" type="icone_musica_na_lojinha_musica">
                     <param id="0" name="Opacity">20</param>
                 </action>
             </actions>
@@ -661,6 +763,9 @@
                 <action id="-16" name="Set opacity" sid="7290402184951861" type="botao_comprar_musica">
                     <param id="0" name="Opacity">20</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="8217873804000241" type="icone_musica_na_lojinha_musica">
+                    <param id="0" name="Opacity">20</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7388726759913347">
@@ -678,6 +783,9 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="6485883494832391" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="972945587665873" type="icone_musica_na_lojinha_musica">
                     <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
@@ -699,6 +807,9 @@
                 <action id="-16" name="Set opacity" sid="3625122922540243" type="botao_comprar_musica">
                     <param id="0" name="Opacity">100</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="9413777894612585" type="icone_musica_na_lojinha_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6988129850491194">
@@ -716,6 +827,9 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="1102877620517529" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="9301976983634791" type="icone_musica_na_lojinha_musica">
                     <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
@@ -737,6 +851,9 @@
                 <action id="-16" name="Set opacity" sid="5558223918491268" type="botao_comprar_musica">
                     <param id="0" name="Opacity">100</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="8315776753261899" type="icone_musica_na_lojinha_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7802522361080573">
@@ -754,6 +871,9 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="3563836328862693" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="5414982766480764" type="icone_musica_na_lojinha_musica">
                     <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
@@ -775,6 +895,9 @@
                 <action id="-16" name="Set opacity" sid="5448277043737702" type="botao_comprar_musica">
                     <param id="0" name="Opacity">100</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="3097987925588947" type="icone_musica_na_lojinha_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="416969907732073">
@@ -792,6 +915,9 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="6846870993319573" type="botao_comprar_musica">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6927485062443799" type="icone_musica_na_lojinha_musica">
                     <param id="0" name="Opacity">100</param>
                 </action>
             </actions>

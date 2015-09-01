@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="musica_tocando" sid="2694607020890315" static="0" type="number">0</variable>
         <comment>em_momento_reviver_personagem indica se o usuário está naquela parte em que o personagem morreu e precisa reviver</comment>
         <variable constant="0" name="em_momento_reviver_personagem" sid="5863598645157652" static="0" type="number">1</variable>
         <variable constant="0" name="tempo_ate_aparecer_dinoobstaculo" sid="5717129671904262" static="0" type="number">3</variable>
@@ -1232,7 +1233,7 @@
                 </action>
                 <action id="-10" name="Set value" sid="7761814975539505" type="DinoObstaculo">
                     <param id="0" name="Instance variable">numero_dinoobstaculo</param>
-                    <param id="1" name="Value">round(random(1))</param>
+                    <param id="1" name="Value">round(random(2))</param>
                 </action>
                 <action id="-9" name="Set value" sid="586713557706202" type="System">
                     <param id="0" name="Variable">tempo_ate_aparecer_dinoobstaculo</param>
@@ -1350,38 +1351,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="2166180500802864">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="3332354710991777" type="DinoObstaculo">
-                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="332066467282925" type="DinoObstaculo">
-                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
-                    <param id="1" name="Value">-1</param>
-                </action>
-                <action id="-10" name="Set value" sid="8363410100456978" type="DinoObstaculo">
-                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
-                    <param id="1" name="Value">&quot;pterodatilo&quot;</param>
-                </action>
-                <action id="4" name="Set animation" sid="9487226299888752" type="DinoObstaculo">
-                    <param id="0" name="Animation">&quot;alvo_pterodatilo&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-1" name="Set X" sid="9708026225436933" type="DinoObstaculo">
-                    <param id="0" name="X">1000</param>
-                </action>
-                <action id="-2" name="Set Y" sid="5518577011708535" type="DinoObstaculo">
-                    <param id="0" name="Y">-74</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7310943584798298" type="DinoObstaculo">
-                    <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="3369789056423996">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="7996566694922811" type="DinoObstaculo">
@@ -1410,6 +1379,38 @@
                     <param id="0" name="Y">-74</param>
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="4577166939767971" type="DinoObstaculo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1528070891096382">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4741971267083202" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="4672029165229663" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-10" name="Set value" sid="8574703225009999" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Value">&quot;vulcao&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="7517194583015901" type="DinoObstaculo">
+                    <param id="0" name="Animation">&quot;vulcao&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="2536939403900786" type="DinoObstaculo">
+                    <param id="0" name="X">1000</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8534416322465314" type="DinoObstaculo">
+                    <param id="0" name="Y">-74</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8997358679676203" type="DinoObstaculo">
                     <param id="0" name="Angle">180</param>
                 </action>
             </actions>
@@ -1616,7 +1617,7 @@
                 <condition id="-14" name="Compare variable" sid="1349407269125974" type="System">
                     <param id="0" name="Variable">coin</param>
                     <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">50</param>
+                    <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
@@ -1633,7 +1634,7 @@
                 <condition id="-14" name="Compare variable" sid="3521714815715937" type="System">
                     <param id="0" name="Variable">coin</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">50</param>
+                    <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
@@ -1653,13 +1654,13 @@
                 <condition id="-14" name="Compare variable" sid="5390951085398392" type="System">
                     <param id="0" name="Variable">coin</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">50</param>
+                    <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="3715360884461056" type="System">
                     <param id="0" name="Variable">coin</param>
-                    <param id="1" name="Value">coin - 50</param>
+                    <param id="1" name="Value">coin - 5</param>
                 </action>
                 <action id="0" name="Set item" sid="1172283310710877" type="LocalStorage">
                     <param id="0" name="Key">&quot;coin&quot;</param>
@@ -1681,6 +1682,12 @@
                 <action id="-9" name="Set value" sid="5146933926731304" type="System">
                     <param id="0" name="Variable">em_momento_reviver_personagem</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5004775804652306" type="botao_nao">
+                    <param id="0" name="Y">99999</param>
+                </action>
+                <action id="-2" name="Set Y" sid="204373980892568" type="Botao_sim">
+                    <param id="0" name="Y">99999</param>
                 </action>
             </actions>
         </event-block>
@@ -1769,6 +1776,12 @@
                     <param id="1" name="Y">icone_coins.Y</param>
                 </action>
                 <action id="33" name="Stop all" sid="6434807979233247" type="Audio" />
+                <action id="-2" name="Set Y" sid="5718682793858069" type="Botao_sim">
+                    <param id="0" name="Y">258</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9222627300171116" type="botao_nao">
+                    <param id="0" name="Y">302</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3543571080675049">
@@ -1836,6 +1849,127 @@
                     <param id="3" name="Loop">1</param>
                     <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4915111280156767">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7288078041475254" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="3292471004605531" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3440712110041079">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9138905917756876" type="Touch">
+                    <param id="0" name="Object">pause_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="8850802896398179" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="8427837684372758" type="System">
+                    <param id="0" name="Time scale">0.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="7753144696591887" type="Audio" />
+                <action id="-2" name="Set Y" sid="1394025186116208" type="botao_continuar_apos_pausa">
+                    <param id="0" name="Y">228</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6904008796988125">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8835569410531485" type="Touch">
+                    <param id="0" name="Object">botao_continuar_apos_pausa</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="1300922493941723" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="5370576587370813" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="2355251232096378" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8358322518319968" type="botao_continuar_apos_pausa">
+                    <param id="0" name="Y">999999</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8943147974633562">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6810655741914328" type="DinoObstaculo">
+                    <param id="0" name="Object">Block</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1683622771687566" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;vulcao&quot;</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="4382333036170437" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="7591864046041457" type="DinoObstaculo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8403885111397333" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5184908465050673">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4386889186316296" type="Player">
+                    <param id="0" name="Object">DinoObstaculo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9832391910466307" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;vulcao&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1493768788945335" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="135604487861312" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="330041280019392" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3957743463096159">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8887200281283555" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="4880401029377188" type="Botao_sim">
+                    <param id="0" name="Y">999999</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1365088951188753" type="botao_nao">
+                    <param id="0" name="Y">999999</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8751935488567703" type="botao_continuar_apos_pausa">
+                    <param id="0" name="Y">999999</param>
                 </action>
             </actions>
         </event-block>

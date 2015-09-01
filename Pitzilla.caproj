@@ -281,7 +281,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3769714771316673" speed="5">
-                    <frame duration="1" hotspotX="0.490196" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor.png">
+                    <frame duration="1" hotspotX="0.490196" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\vulcao\vulcao0.png">
                         <collision-poly>
                             <point x="1" y="1" />
                             <point x="0" y="1" />
@@ -307,74 +307,110 @@
                 <animation framecount="9" loop="1" name="espinhudo" pingpong="0" repeatcount="1" repeatto="0" sid="3609550082766363" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor.png">
                         <collision-poly>
-                            <point x="0.00735301" y="0.00366972" />
-                            <point x="0.992647" y="0.00366972" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.121212" y="0.125" />
+                            <point x="0.454545" y="0" />
+                            <point x="0.69697" y="0" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.272727" y="1" />
+                            <point x="0.0454545" y="0.5" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor_2.png">
                         <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
+                            <point x="0.0606061" y="0.109375" />
+                            <point x="0.5" y="0" />
+                            <point x="0.712121" y="0.046875" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.212121" y="1" />
+                            <point x="0.0454545" y="0.5" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor_3.png">
                         <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
+                            <point x="0.121212" y="0.125" />
+                            <point x="0.454545" y="0" />
+                            <point x="0.666667" y="0" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.227273" y="1" />
+                            <point x="0" y="0.484375" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\dino_menor_4.png">
                         <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
+                            <point x="0.121212" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.69697" y="0.03125" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.227273" y="1" />
+                            <point x="0" y="0.484375" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.00735301" y="0.00366972" />
-                            <point x="0.992647" y="0.00366972" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.121212" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.712121" y="0.015625" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.257576" y="1" />
+                            <point x="0" y="0.46875" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.00735301" y="0.00366972" />
-                            <point x="0.992647" y="0.00366972" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.121212" y="0.125" />
+                            <point x="0.484848" y="0" />
+                            <point x="0.742424" y="0.03125" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.227273" y="1" />
+                            <point x="0" y="0.484375" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.00735301" y="0.00366972" />
-                            <point x="0.992647" y="0.00366972" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.0909091" y="0.046875" />
+                            <point x="0.651515" y="0" />
+                            <point x="0.742424" y="0.265625" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.257576" y="1" />
+                            <point x="0" y="0.46875" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.00735301" y="0.00366972" />
-                            <point x="0.992647" y="0.00366972" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.121212" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.69697" y="0.015625" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.242424" y="1" />
+                            <point x="0" y="0.46875" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.00735301" y="0.00366972" />
-                            <point x="0.992647" y="0.00366972" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.121212" y="0.125" />
+                            <point x="0.515152" y="0" />
+                            <point x="0.69697" y="0.03125" />
+                            <point x="0.878788" y="0.5" />
+                            <point x="0.984848" y="0.984375" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.242424" y="1" />
+                            <point x="0" y="0.46875" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -391,8 +427,65 @@
                             <point x="0" y="0.488372" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor_2.png" />
-                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor_3.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor_2.png">
+                        <collision-poly>
+                            <point x="0.156863" y="0.186047" />
+                            <point x="0.490196" y="0" />
+                            <point x="0.568627" y="0.511628" />
+                            <point x="0.960784" y="0.325581" />
+                            <point x="0.882353" y="0.860465" />
+                            <point x="0.490196" y="0.930233" />
+                            <point x="0.137255" y="0.837209" />
+                            <point x="0" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2016.1\pitzilla\ptero_menor_3.png">
+                        <collision-poly>
+                            <point x="0.156863" y="0.186047" />
+                            <point x="0.490196" y="0" />
+                            <point x="0.568627" y="0.511628" />
+                            <point x="1" y="0.488372" />
+                            <point x="0.862745" y="0.837209" />
+                            <point x="0.490196" y="0.930233" />
+                            <point x="0.137255" y="0.837209" />
+                            <point x="0" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="vulcao" pingpong="0" repeatcount="1" repeatto="0" sid="4141320866815898" speed="2">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.467742" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\vulcao\vulcao0.png">
+                        <collision-poly>
+                            <point x="0.188679" y="0.451613" />
+                            <point x="0.830189" y="0.443548" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.467742" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\vulcao\vulcao1.png">
+                        <collision-poly>
+                            <point x="0.0566038" y="0.419355" />
+                            <point x="0.962264" y="0.419355" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.467742" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\vulcao\vulcao2.png">
+                        <collision-poly>
+                            <point x="0" y="0.298387" />
+                            <point x="0.962264" y="0.298387" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.467742" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\vulcao\vulcao3.png">
+                        <collision-poly>
+                            <point x="0" y="0.137097" />
+                            <point x="1" y="0.137097" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.467742" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\vulcao\vulcao4.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1030,7 +1123,7 @@
         <object-type name="Nome_musica" sid="5672871890568784">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite3" sid="876112998032403">
+        <object-type name="icone_musica_na_lojinha_musica" sid="876112998032403">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6488305660574171" speed="5">
@@ -1051,6 +1144,61 @@
         </object-type>
         <object-type name="Audio" sid="2318313400766334">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="background_popup_pause" sid="137186137767974">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2534209688703105" speed="5">
+                    <frame duration="1" hotspotX="0.501538" hotspotY="0.501608" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\background_opopup_fim_de_jogo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pittstop" sid="1368380858366355">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="botao_continuar_apos_pausa" sid="4839647520422415">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1049501929359085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\botao_fim_jogo.png">
+                        <collision-poly>
+                            <point x="0.06" y="0.166667" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.945" y="0.152778" />
+                            <point x="0.995" y="0.5" />
+                            <point x="0.94" y="0.833333" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.065" y="0.819444" />
+                            <point x="0.015" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_musica_pause_texto" sid="3197146604867567">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Texto_botao_continuar_apos_pausa" sid="4825386875107571">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="pause_button" sid="2121423661054991">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1371547931889826" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\pause.png">
+                        <collision-poly>
+                            <point x="0.0208333" y="0.0208333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.979167" y="0.0208333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.979167" y="0.979167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0208333" y="0.979167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
@@ -1097,10 +1245,10 @@
     <sounds-folder>
         <file name="steel_road.m4a" />
         <file name="steel_road.ogg" />
-        <file name="_electro_go_funky_electronica_breakbeat.m4a" />
-        <file name="_electro_go_funky_electronica_breakbeat.ogg" />
         <file name="_so_good_upbeat_brass_pop_rock.m4a" />
         <file name="_so_good_upbeat_brass_pop_rock.ogg" />
+        <file name="_electro_go_funky_electronica_breakbeat.m4a" />
+        <file name="_electro_go_funky_electronica_breakbeat.ogg" />
         <file name="a_day_in_the_sun.m4a" />
         <file name="a_day_in_the_sun.ogg" />
         <file name="bold_valor.m4a" />

@@ -95,6 +95,7 @@
                         <virou_dino_chicken>false</virou_dino_chicken>
                         <dino_perdendo_poder_pittschicken>false</dino_perdendo_poder_pittschicken>
                         <virou_pitts_batata>false</virou_pitts_batata>
+                        <destroi_obstaculos>false</destroi_obstaculos>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -175,6 +176,7 @@
                         <se_mexendo>true</se_mexendo>
                         <qual_dinoobstaculo_eh></qual_dinoobstaculo_eh>
                         <numero_dinoobstaculo>-1</numero_dinoobstaculo>
+                        <acertado_por_pitzilla>false</acertado_por_pitzilla>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
