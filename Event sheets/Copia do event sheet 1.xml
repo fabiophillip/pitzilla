@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Copia do event sheet 1</name>
     <events>
+        <variable constant="0" name="nome_musica_selecionada" sid="3316336967418886" static="0" type="text">steel_road</variable>
         <variable constant="0" name="pitts_natural_timer" sid="6399776276138255" static="0" type="number">1000</variable>
         <variable comment="tempo pra adicionar moedinha" constant="0" name="adicionar_moedinha_timer" sid="5820904437958688" static="0" type="number">2000</variable>
         <variable comment="usuario acabou de pegar moedinha" constant="0" name="adicionar_moedinha" sid="1699819338060547" static="0" type="number">0</variable>
@@ -1299,7 +1300,7 @@
                 </action>
                 <action id="-10" name="Set value" sid="7646089663228783" type="DinoObstaculo">
                     <param id="0" name="Instance variable">numero_dinoobstaculo</param>
-                    <param id="1" name="Value">round(random(1))</param>
+                    <param id="1" name="Value">round(random(2))</param>
                 </action>
                 <action id="-9" name="Set value" sid="7639316303015923" type="System">
                     <param id="0" name="Variable">tempo_ate_aparecer_dinoobstaculo</param>
@@ -1417,38 +1418,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="5796010941524424">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="3951194183766259" type="DinoObstaculo">
-                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="9465718876622173" type="DinoObstaculo">
-                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
-                    <param id="1" name="Value">-1</param>
-                </action>
-                <action id="-10" name="Set value" sid="4581935132180885" type="DinoObstaculo">
-                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
-                    <param id="1" name="Value">&quot;pterodatilo&quot;</param>
-                </action>
-                <action id="4" name="Set animation" sid="2938292257289834" type="DinoObstaculo">
-                    <param id="0" name="Animation">&quot;alvo_pterodatilo&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-1" name="Set X" sid="7332356627275381" type="DinoObstaculo">
-                    <param id="0" name="X">1000</param>
-                </action>
-                <action id="-2" name="Set Y" sid="9553474539146209" type="DinoObstaculo">
-                    <param id="0" name="Y">-74</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="3881289460310392" type="DinoObstaculo">
-                    <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="8200636895792586">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="3651199128699727" type="DinoObstaculo">
@@ -1477,6 +1446,38 @@
                     <param id="0" name="Y">-74</param>
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="7057137592432775" type="DinoObstaculo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5708163963966497">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8276543402532794" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7564006996779037" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">numero_dinoobstaculo</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-10" name="Set value" sid="9422989466851598" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Value">&quot;vulcao&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="4828709882087458" type="DinoObstaculo">
+                    <param id="0" name="Animation">&quot;vulcao&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="792919347994308" type="DinoObstaculo">
+                    <param id="0" name="X">1000</param>
+                </action>
+                <action id="-2" name="Set Y" sid="821869429555269" type="DinoObstaculo">
+                    <param id="0" name="Y">-74</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="4830477314592024" type="DinoObstaculo">
                     <param id="0" name="Angle">180</param>
                 </action>
             </actions>
@@ -1693,7 +1694,7 @@
                 <condition id="-14" name="Compare variable" sid="3077455777634015" type="System">
                     <param id="0" name="Variable">coin</param>
                     <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">50</param>
+                    <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
@@ -1710,7 +1711,7 @@
                 <condition id="-14" name="Compare variable" sid="5913328208186652" type="System">
                     <param id="0" name="Variable">coin</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">50</param>
+                    <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
@@ -1730,13 +1731,13 @@
                 <condition id="-14" name="Compare variable" sid="4353100590224051" type="System">
                     <param id="0" name="Variable">coin</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">50</param>
+                    <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="3533576539935684" type="System">
                     <param id="0" name="Variable">coin</param>
-                    <param id="1" name="Value">coin - 50</param>
+                    <param id="1" name="Value">coin - 5</param>
                 </action>
                 <action id="0" name="Set item" sid="8229596567905908" type="LocalStorage">
                     <param id="0" name="Key">&quot;coin&quot;</param>
@@ -1758,6 +1759,12 @@
                 <action id="-9" name="Set value" sid="2933863964951623" type="System">
                     <param id="0" name="Variable">em_momento_reviver_personagem</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9688743429696493" type="botao_nao">
+                    <param id="0" name="Y">99999</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5890560257168952" type="Botao_sim">
+                    <param id="0" name="Y">99999</param>
                 </action>
             </actions>
         </event-block>
@@ -2035,6 +2042,12 @@
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="33" name="Stop all" sid="5253288835635565" type="Audio" />
+                <action id="-2" name="Set Y" sid="626039938068678" type="Botao_sim">
+                    <param id="0" name="Y">258</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8967756673935838" type="botao_nao">
+                    <param id="0" name="Y">302</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6087231428026636">
@@ -2114,6 +2127,10 @@
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="2159261024930664" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;steel_road&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1645185037338903">
@@ -2131,6 +2148,10 @@
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6205348185235071" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2150,6 +2171,10 @@
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="267611024139338" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;a_day_in_the_sun&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8702896309852415">
@@ -2167,6 +2192,10 @@
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5508772761154938" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;bold_valor&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2186,6 +2215,10 @@
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="1881795949986479" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;fourth_and_two&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8581332723439699">
@@ -2203,6 +2236,10 @@
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3029015365482194" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;goofy_loop&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2222,6 +2259,10 @@
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="1046363185648575" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;sailor_apostrofo_s_piccolo&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7692406858073577">
@@ -2239,6 +2280,10 @@
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8715791919830266" type="System">
+                            <param id="0" name="Variable">nome_musica_selecionada</param>
+                            <param id="1" name="Value">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2289,6 +2334,127 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="6838225764574459">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3674350272056608" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="911623594915989" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5859314802846401">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1813475056346663" type="Touch">
+                    <param id="0" name="Object">pause_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="5274725653335783" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="245896643585907" type="System">
+                    <param id="0" name="Time scale">0.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="3515674541194439" type="Audio" />
+                <action id="-2" name="Set Y" sid="9739768454160568" type="botao_continuar_apos_pausa">
+                    <param id="0" name="Y">228</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8486486977847531">
+            <conditions>
+                <condition id="17" name="On tap object" sid="6625154261938143" type="Touch">
+                    <param id="0" name="Object">botao_continuar_apos_pausa</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="5126173647432258" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="9249344525587476" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="1358290718544562" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">nome_musica_selecionada</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9102342333576535" type="botao_continuar_apos_pausa">
+                    <param id="0" name="Y">999999</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8124878739581184">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="4600414715475178" type="DinoObstaculo">
+                    <param id="0" name="Object">Block</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9489315630600412" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;vulcao&quot;</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="5002008127032716" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="7062846736559533" type="DinoObstaculo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8106236346712508" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">se_mexendo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3378118500124571">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5533218744239049" type="Player">
+                    <param id="0" name="Object">DinoObstaculo</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4779364667962073" type="DinoObstaculo">
+                    <param id="0" name="Instance variable">qual_dinoobstaculo_eh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;vulcao&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8507846421560086" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2707183267850981" type="Player">
+                    <param id="0" name="Instance variable">destroi_obstaculos</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="6836442734226409" type="Player">
+                    <param id="0" name="Instance variable">morto</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1700601396612">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2786890496953838" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="806929426895469" type="Botao_sim">
+                    <param id="0" name="Y">999999</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7990289364462291" type="botao_nao">
+                    <param id="0" name="Y">999999</param>
+                </action>
+                <action id="-2" name="Set Y" sid="4212820185723989" type="botao_continuar_apos_pausa">
+                    <param id="0" name="Y">999999</param>
+                </action>
+            </actions>
         </event-block>
         <comment>referente a moedinha</comment>
         <event-block sid="7244345161074209">

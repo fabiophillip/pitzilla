@@ -96,6 +96,8 @@
                         <dino_perdendo_poder_pittschicken>false</dino_perdendo_poder_pittschicken>
                         <virou_pitts_batata>false</virou_pitts_batata>
                         <destroi_obstaculos>false</destroi_obstaculos>
+                        <virou_dino_superpulo>false</virou_dino_superpulo>
+                        <dino_perdendo_poder_superpulo>false</dino_perdendo_poder_superpulo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

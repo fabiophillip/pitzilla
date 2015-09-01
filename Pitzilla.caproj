@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Pitzilla</name>
     <description></description>
@@ -12,13 +12,13 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -1214,7 +1214,7 @@
         <object-type name="Audio" sid="2318313400766334">
             <plugin id="Audio" />
         </object-type>
-         <object-type name="titulo_selecione_personagem" sid="1414940646822766">
+        <object-type name="titulo_selecione_personagem" sid="1414940646822766">
             <plugin id="Text" />
         </object-type>
         <object-type name="dino_select_char" sid="4369710709756281">
@@ -1673,15 +1673,15 @@
         <event-sheet>Eventos_lojinha_dino.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="46">
+        <global-instance type="Touch" uid="134">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="47" />
-        <global-instance type="LocalStorage" uid="48" />
-        <global-instance type="Browser" uid="49" />
-        <global-instance type="Audio" uid="98">
+        <global-instance type="Keyboard" uid="135" />
+        <global-instance type="LocalStorage" uid="136" />
+        <global-instance type="Browser" uid="137" />
+        <global-instance type="Audio" uid="138">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
