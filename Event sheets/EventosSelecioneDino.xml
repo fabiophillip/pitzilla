@@ -1,0 +1,1251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosSelecioneDino</name>
+    <events>
+        <variable comment="quando o usuário seleciona música ele apertou da última vez esquerda ou direita" constant="0" name="usuario_quer_musica_esq_ou_dir" sid="3666957920672265" static="0" type="text">esquerda</variable>
+        <variable constant="0" name="usuario_quer_dino_esq_ou_dir" sid="5841348538714236" static="0" type="text">esquerda</variable>
+        <variable constant="0" name="mudar_musica_atual_pro_jogo" sid="4415137577601298" static="0" type="number">0</variable>
+        <variable constant="0" name="mudar_dino_atual_pro_jogo" sid="5178386758007104" static="0" type="number">0</variable>
+        <variable constant="0" name="dino_selecionado_pro_jogo" sid="371220192838657" static="0" type="number">0</variable>
+        <variable constant="0" name="musica_selecionada_pro_jogo" sid="8277890988875935" static="0" type="number">0</variable>
+        <event-block sid="1423066365039466">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9234636788939975" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="601646898440119" type="System" />
+                <action id="0" name="Add key" sid="4592606426270118" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;dino_selecionado&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Add key" sid="3870345610497042" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="5" name="Check item exists" sid="8264540177269067" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="4343008839109809" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="928124521892678" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="3582520386482116" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="3857529510390879" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="2834173874752304" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="5707111343875823" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="7823770291512723" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="8679125290548257" type="Audio" />
+                <action id="7" name="Play (by name)" sid="2625357466561163" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4240885227673836">
+            <conditions>
+                <condition id="9" name="On item exists" sid="5979276757702353" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8216021393805318" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4954911354601807">
+            <conditions>
+                <condition id="9" name="On item exists" sid="7709176379318184" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2973005144659234" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="790515011662783">
+            <conditions>
+                <condition id="9" name="On item exists" sid="1661083891542868" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5880301238019744" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2403355320595037">
+            <conditions>
+                <condition id="9" name="On item exists" sid="3031353401417745" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1394195305596274" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="656134748019437">
+            <conditions>
+                <condition id="9" name="On item exists" sid="4299641588169809" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3637739509061288" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3681770325102768">
+            <conditions>
+                <condition id="9" name="On item exists" sid="9740674364625605" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6954089470152032" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5990491099300689">
+            <conditions>
+                <condition id="9" name="On item exists" sid="7386603167911735" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5309007015493313" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2854286063160701">
+            <conditions>
+                <condition id="9" name="On item exists" sid="7904973061111542" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4951460580631967" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="567897061323819">
+            <conditions>
+                <condition id="10" name="On item missing" sid="9809500204220342" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="1074719895267436" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_0&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1172601109704464">
+            <conditions>
+                <condition id="10" name="On item missing" sid="4202262859597294" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="9402721037030448" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_1&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6585847749218444">
+            <conditions>
+                <condition id="10" name="On item missing" sid="292766266341102" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="1614585640654385" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_2&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3024537985565897">
+            <conditions>
+                <condition id="10" name="On item missing" sid="6263869898152088" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="7640903550341539" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_3&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2005567232082428">
+            <conditions>
+                <condition id="10" name="On item missing" sid="5545383659005806" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="9193247605509619" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_4&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8051132208510234">
+            <conditions>
+                <condition id="10" name="On item missing" sid="5216648394953568" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="7628065219568095" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_5&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7396153682812415">
+            <conditions>
+                <condition id="10" name="On item missing" sid="8002914493074279" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="8289150399870627" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_musica_6&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9292828833069784">
+            <conditions>
+                <condition id="10" name="On item missing" sid="429296846210492" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="6081671310538705" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9996833854594362">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7767714519250256" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6286581755965511" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3465690285949848" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;Steel road&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="4142859822574287" type="Audio" />
+                <action id="7" name="Play (by name)" sid="2776730658634966" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="8226219896744776" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2286390721650045" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4734025442693484">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6587584758496628" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7102006445456211" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3656495467032406" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1024070034990866" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;So good&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="1636301819781301" type="Audio" />
+                <action id="7" name="Play (by name)" sid="2097405838428287" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="1748662426771779" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2242603405189644" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4924407167772752">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3166067291658813" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4948571181515121" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4462973395530759" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7909334816646908" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;A day in the sun&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="6433548229051779" type="Audio" />
+                <action id="7" name="Play (by name)" sid="1209643905212913" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;a_day_in_the_sun&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="8587587043742002" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="9471942383910347" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4822887921234397">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2868090710089778" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4950390999254156" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3736532184503884" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7791554410706132" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;Bold valor&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="2550306222559371" type="Audio" />
+                <action id="7" name="Play (by name)" sid="4006978055467786" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;bold_valor&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="4043224602616093" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="2579197993991111" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1286664911362541">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4080524306157161" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9601637802812241" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8329864217122409" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="360139849017441" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;Fourth and two&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="9654086937905415" type="Audio" />
+                <action id="7" name="Play (by name)" sid="1089048125528953" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;fourth_and_two&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="7878451324119984" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="5919801130767" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1826200480827024">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6489959241094441" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1685132998551619" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4281682187780511" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="542832202031947" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;Goofy loop&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="4455615052546087" type="Audio" />
+                <action id="7" name="Play (by name)" sid="1575540835638268" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;goofy_loop&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="4526225444100715" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="1323804599931638" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6726419855868175">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7370317351280656" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="347283677415195" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="221987011998041" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8191183267588141" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;Sailor&apos;s piccolo&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="5003213330061629" type="Audio" />
+                <action id="7" name="Play (by name)" sid="8146443022557013" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;sailor_apostrofo_s_piccolo&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="3968839241001083" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="3287471194665001" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6218118632724739">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2205256922427503" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4927131854964749" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3631888913727697" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="977598690107897" type="nome_musica_selecionada_pro_jogo">
+                    <param id="0" name="Text">&quot;Electro go funky&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="7891057940147463" type="Audio" />
+                <action id="7" name="Play (by name)" sid="9958877964522056" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Add key" sid="6093143301344105" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="-9" name="Set value" sid="5223134099441527" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8103007831318403">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3128785211397358" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3726616258053932" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9978063975951618" type="nome_dino_selecionado">
+                    <param id="0" name="Text">&quot;PIttssauro&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="287905787499971" type="dino_select_char">
+                    <param id="0" name="Animation">&quot;dino&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Add key" sid="424559836591986" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;dino_selecionado&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1672991659007266" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1817498993235833">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3014151674441005" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3223221409794255" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="785523454467986" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9791817714735479" type="nome_dino_selecionado">
+                    <param id="0" name="Text">&quot;PIttssaura&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="7115574456883141" type="dino_select_char">
+                    <param id="0" name="Animation">&quot;dina&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Add key" sid="535046904234852" type="dicionario_dino_e_musica_selecionada">
+                    <param id="0" name="Key">&quot;dino_selecionado&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4439306215430509" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9023511818808552">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="750886326441202" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7300264260628328" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="-9" name="Set value" sid="1738040558132595" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3866506769817269">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8407249996939604" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5723861432442151" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3952199254576471" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7986278320805287">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9481016613630543" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9714921383154926" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4360581296195359" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2526549496697215">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2206607471691557" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7644128117366448" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2516873548772675" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5138120815526078">
+            <conditions>
+                <condition id="17" name="On tap object" sid="5005502807723199" type="Touch">
+                    <param id="0" name="Object">select_right_musica</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1923619087611396" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Value">musica_selecionada_pro_jogo + 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8400518303610549" type="System">
+                    <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                    <param id="1" name="Value">&quot;direita&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5412694354296559" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6159305098884535">
+            <conditions>
+                <condition id="17" name="On tap object" sid="4417593135349109" type="Touch">
+                    <param id="0" name="Object">select_left_musica</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2421856101207358" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4909087552532343" type="System">
+                    <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                    <param id="1" name="Value">&quot;esquerda&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="7955851836677852" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="321215129644388">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7084144569160407" type="Touch">
+                    <param id="0" name="Object">select_right_character</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2176972152495227" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Value">dino_selecionado_pro_jogo + 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9789814911336815" type="System">
+                    <param id="0" name="Variable">usuario_quer_dino_esq_ou_dir</param>
+                    <param id="1" name="Value">&quot;direita&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5134978377268905" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="333312756192457">
+            <conditions>
+                <condition id="17" name="On tap object" sid="291521077410944" type="Touch">
+                    <param id="0" name="Object">select_left_character</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8423551733331404" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Value">dino_selecionado_pro_jogo - 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4891843840869057" type="System">
+                    <param id="0" name="Variable">usuario_quer_dino_esq_ou_dir</param>
+                    <param id="1" name="Value">&quot;esquerda&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="7754684435517494" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9604311417341128">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5961371484912332" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8357765761902182" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8910605576806972" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7880036432225362">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7524834613956492" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8464945928826713" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3361676188136995">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5742717237867965" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3209459781323408" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="385963049626969">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8465230007866848" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2703874440836808" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2732109878689659" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3781374541003263">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7165296251235779" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5644813621469826" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1229596905588501">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3924489465138314" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1798788386541392" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3575753871434829">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2815158615113566" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4365246546872743" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1483809888592285" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="900856269038123">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3775666729259831" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6645871627249624" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3736066300313611">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1729848211340553" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3259494016955367" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6937980143762428">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3977152572552941" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1543157355128177" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1774485547499127" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3696140244109081">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5023911085773743" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7324987093018937" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6912545120331016">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4858244217089685" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="946733210661586" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7480114204526731">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6908688708016697" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4560768668843561" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3362775437057581" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="632274467549844">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7973032210313301" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="519185314069285" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6587262552275523">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1892291880147032" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4374753269624433" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1344583991879654">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9469866613006618" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7322439076669604" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8158271111410457" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3144298746418326">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8237068995254934" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="140545157885725" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1517211270590137">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5973906339459068" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4514507571310979" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3603515326139128">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="623654460011619" type="System">
+                    <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4028241743938679" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9859913455892553" type="System">
+                    <param id="0" name="Variable">mudar_musica_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="591043042507574">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3403829614260715" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2897362508957701" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="651620749429933">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2235882968495666" type="System">
+                            <param id="0" name="Variable">usuario_quer_musica_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4047642823915002" type="System">
+                            <param id="0" name="Variable">musica_selecionada_pro_jogo</param>
+                            <param id="1" name="Value">musica_selecionada_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1777792052319392">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2562567838655339" type="System">
+                    <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9133536533448406" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8364990224640142" type="System">
+                    <param id="0" name="Variable">mudar_dino_atual_pro_jogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="660142972708282">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5164947485675835" type="System">
+                            <param id="0" name="Variable">usuario_quer_dino_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4106768801003552" type="System">
+                            <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                            <param id="1" name="Value">dino_selecionado_pro_jogo - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5930305246963866">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3599913850080507" type="System">
+                            <param id="0" name="Variable">usuario_quer_dino_esq_ou_dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6274107308238871" type="System">
+                            <param id="0" name="Variable">dino_selecionado_pro_jogo</param>
+                            <param id="1" name="Value">dino_selecionado_pro_jogo +1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2758295030348033">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9877463607981432" type="Touch">
+                    <param id="0" name="Object">fundo_botao_menu_inicial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2731155496041353" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="141827022153778">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3262762805057441" type="Touch">
+                    <param id="0" name="Object">botao_ir_tela_jogo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7644844553724103" type="System">
+                    <param id="0" name="Layout">Copia do layout1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

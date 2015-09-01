@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos_lojinha_dino</name>
+    <events>
+        <variable constant="0" name="numero_dino_mostrando_lojinha" sid="4134869984689518" static="0" type="number">0</variable>
+        <variable constant="0" name="ja_comprou_dino_0" sid="2738001242949565" static="0" type="text">&quot;false&quot;</variable>
+        <event-block sid="2157364158292539">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8568064040964189" type="Touch">
+                    <param id="0" name="Object">Botao_voltar_lojinha_musica</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3784609789400745" type="System">
+                    <param id="0" name="Layout">Lojinha</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9915670388407308">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="112250243204945" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1286768395907057" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5228348156643279">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6847763256568696" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5505174071289745" type="nome_dino_comprar">
+                    <param id="0" name="Text">&quot;Pittssaura&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="3374930455886703" type="dino_comprar">
+                    <param id="0" name="Animation">&quot;dina&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="6142263670539634" type="valor_dino_comprar">
+                    <param id="0" name="Text">&quot;100&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5206011537820949">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3969616814940365" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7849588214754385" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8005482646210071">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8622325572730231" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1940101251819876" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1065675048194695">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1306545459489398" type="Touch">
+                    <param id="0" name="Object">botao_direita_comprar_dino</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5188394591838642" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Value">numero_dino_mostrando_lojinha + 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7422189784399392">
+            <conditions>
+                <condition id="17" name="On tap object" sid="4848571964481579" type="Touch">
+                    <param id="0" name="Object">botao_esquerda_comprar_dino</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2203659944149539" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Value">numero_dino_mostrando_lojinha - 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5117110702043253">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5328350985006693" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="5077806628275513" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="9309136209038347" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="488635565152398">
+            <conditions>
+                <condition id="9" name="On item exists" sid="2114882623668343" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="675090142679107" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(LocalStorage.ItemValue)</param>
+                </action>
+                <action id="-5" name="Set width" sid="4616728017830145" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="1755070396817552" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="8252507179074681" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="-9" name="Set value" sid="4556218730157853" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">float(LocalStorage.ItemValue)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8458475034323406">
+            <conditions>
+                <condition id="10" name="On item missing" sid="8043146687402904" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5942470941877879" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; 0</param>
+                </action>
+                <action id="-5" name="Set width" sid="5294099612447241" type="label_moedas">
+                    <param id="0" name="Width">len(label_moedas.Text) * 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="4569084529581474" type="X_fim_jogo_coins">
+                    <param id="0" name="X">label_moedas.X + len(label_moedas.Text)*16</param>
+                    <param id="1" name="Y">X_fim_jogo_coins.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="3471105870907172" type="icone_coins">
+                    <param id="0" name="X">X_fim_jogo_coins.X +50</param>
+                    <param id="1" name="Y">icone_coins.Y</param>
+                </action>
+                <action id="0" name="Set item" sid="6858372127375473" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8488905686967876" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9459261583683192">
+            <conditions>
+                <condition id="9" name="On item exists" sid="4648342890932363" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3816763101151989" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6475689644112647">
+            <conditions>
+                <condition id="10" name="On item missing" sid="8052311053120732" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="641701496514684" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                    <param id="1" name="Value">&quot;false&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="224117499466713">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="766269704597381" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3702048517835312" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="39925764586829" type="botao_comprar_dino">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="46044874622889">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2389674556095705" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8438680905838054" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="696410642505347" type="botao_comprar_dino">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6095800037417602">
+            <conditions>
+                <condition id="17" name="On tap object" sid="2340655105020932" type="Touch">
+                    <param id="0" name="Object">botao_comprar_dino</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4979668130426636" type="System">
+                    <param id="0" name="Variable">numero_dino_mostrando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2588799192350125" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="11318547053013" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8136388503819879" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin - 100</param>
+                </action>
+                <action id="0" name="Set item" sid="3930221675426388" type="LocalStorage">
+                    <param id="0" name="Key">&quot;coin&quot;</param>
+                    <param id="1" name="Value">coin</param>
+                </action>
+                <action id="0" name="Set item" sid="7518671582997185" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="4416171835423773" type="System">
+                    <param id="0" name="Variable">ja_comprou_dino_0</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="2788785445262917" type="label_moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
