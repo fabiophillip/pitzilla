@@ -30,5 +30,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="hamburguer" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="UI" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Popup_personagem_morreu" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="pause" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

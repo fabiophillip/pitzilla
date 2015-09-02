@@ -1673,15 +1673,15 @@
         <event-sheet>Eventos_lojinha_dino.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="134">
+        <global-instance type="Touch" uid="136">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="135" />
-        <global-instance type="LocalStorage" uid="136" />
-        <global-instance type="Browser" uid="137" />
-        <global-instance type="Audio" uid="138">
+        <global-instance type="Keyboard" uid="137" />
+        <global-instance type="LocalStorage" uid="138" />
+        <global-instance type="Browser" uid="147" />
+        <global-instance type="Audio" uid="148">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

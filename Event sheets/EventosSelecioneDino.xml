@@ -1243,7 +1243,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="7644844553724103" type="System">
-                    <param id="0" name="Layout">Copia do layout1</param>
+                    <param id="0" name="Layout">Layout 1</param>
                 </action>
             </actions>
         </event-block>
