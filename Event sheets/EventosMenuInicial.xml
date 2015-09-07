@@ -3,12 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventosMenuInicial</name>
     <events>
+        <variable constant="0" name="tocar_musica" sid="5551737933689395" static="0" type="number">1</variable>
         <variable constant="0" name="coin" sid="8132269001736203" static="0" type="number">0</variable>
         <event-block sid="3097815021443049">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="5945301966199626" type="System" />
             </conditions>
             <actions>
+                <action id="-21" name="Reset global variables" sid="6819855749133295" type="System" />
                 <action id="5" name="Check item exists" sid="8882217778200452" type="LocalStorage">
                     <param id="0" name="Key">&quot;coin&quot;</param>
                 </action>
@@ -123,6 +125,83 @@
                     <param id="3" name="Loop">1</param>
                     <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;rough_rider_bom_menu_inicial&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7004992884841429">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8020803353855515" type="Touch">
+                    <param id="0" name="Object">fundo_botao_som_off_on</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4662536557009939" type="System">
+                    <param id="0" name="Variable">tocar_musica</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="9167433815721446" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="1" name="Set key" sid="579104165991353" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7177976124054964" type="icone_musica_on_off">
+                    <param id="0" name="Animation">&quot;musica_on&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="1414383269848024" type="System">
+                    <param id="0" name="Variable">tocar_musica</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="8640696591255244" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;rough_rider_bom_menu_inicial&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4448204980946116">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8732172269049972" type="Touch">
+                    <param id="0" name="Object">fundo_botao_som_off_on</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1237545070931307" type="System">
+                    <param id="0" name="Variable">tocar_musica</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="3813909968246904" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="1" name="Set key" sid="7518834015761068" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="5698275839762866" type="icone_musica_on_off">
+                    <param id="0" name="Animation">&quot;musica_off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="1459368937147621" type="System">
+                    <param id="0" name="Variable">tocar_musica</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="33" name="Stop all" sid="6242983259868635" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="4868771356084008">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1897964564723386" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Add key" sid="527590559102137" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

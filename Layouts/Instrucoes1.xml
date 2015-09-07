@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="136">
+                <instance type="BackgroundNormal" uid="138">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles" uid="137">
+                <instance type="Controles" uid="147">
                     <properties>
                         <text>Controles</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles1" uid="138">
+                <instance type="Controles1" uid="148">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -100,7 +100,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles2" uid="147">
+                <instance type="Controles2" uid="149">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -125,7 +125,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles5" uid="148">
+                <instance type="Controles5" uid="150">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -150,7 +150,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="149">
+                <instance type="DescricaoControles" uid="151">
                     <properties>
                         <text>Toque na tela para pular e evitar obstáculos.</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -177,7 +177,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="150">
+                <instance type="DescricaoControles" uid="152">
                     <properties>
                         <text>Toque novamente para um pulo duplo!</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -204,7 +204,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_avancar_tutorial1" uid="151">
+                <instance type="botao_avancar_tutorial1" uid="153">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -226,7 +226,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_menu_instrucoes" uid="152">
+                <instance type="botao_menu_instrucoes" uid="154">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -248,7 +248,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_botao_menu_instrucoes" uid="153">
+                <instance type="texto_botao_menu_instrucoes" uid="155">
                     <properties>
                         <text>Menu</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -319,7 +319,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles3" uid="154">
+                <instance type="Controles3" uid="156">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -363,7 +363,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles4" uid="155">
+                <instance type="Controles4" uid="157">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

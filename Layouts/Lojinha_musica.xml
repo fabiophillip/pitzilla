@@ -440,7 +440,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fundo_popup_deseja_mesmo_comprar" uid="163">
+                <instance type="fundo_popup_deseja_mesmo_comprar" uid="105">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -462,7 +462,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="confirmar_compra" uid="228">
+                <instance type="confirmar_compra" uid="106">
                     <properties>
                         <text>Confirmar compra?</text>
                         <initial-visibility>Visible</initial-visibility>

@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="207">
+                <instance type="BackgroundNormal" uid="214">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles" uid="208">
+                <instance type="Controles" uid="215">
                     <properties>
                         <text>Moedas</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="209">
+                <instance type="DescricaoControles" uid="216">
                     <properties>
                         <text>No final do jogo, você ganha moedas</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -105,7 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_menu_instrucoes" uid="210">
+                <instance type="botao_menu_instrucoes" uid="217">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -127,7 +127,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_botao_menu_instrucoes" uid="211">
+                <instance type="texto_botao_menu_instrucoes" uid="218">
                     <properties>
                         <text>Menu</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -154,7 +154,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="212">
+                <instance type="DescricaoControles" uid="219">
                     <properties>
                         <text>Bom jogo!</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -181,7 +181,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="213">
+                <instance type="DescricaoControles" uid="220">
                     <properties>
                         <text>com base nos seus pontos...</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -208,7 +208,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="214">
+                <instance type="DescricaoControles" uid="221">
                     <properties>
                         <text>e pode gastá-las com personagens e músicas</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -235,7 +235,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="215">
+                <instance type="DescricaoControles" uid="222">
                     <properties>
                         <text>na lojinha</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -262,7 +262,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite6" uid="216">
+                <instance type="Sprite6" uid="223">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -284,7 +284,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite7" uid="217">
+                <instance type="Sprite7" uid="224">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -306,7 +306,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_musica_na_lojinha_musica" uid="218">
+                <instance type="icone_musica_na_lojinha_musica" uid="225">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -328,7 +328,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_voltar_tutorial4" uid="219">
+                <instance type="botao_voltar_tutorial4" uid="226">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -350,7 +350,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_jogar_instrucoes" uid="220">
+                <instance type="botao_jogar_instrucoes" uid="240">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -372,7 +372,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jogar_instrucoes" uid="221">
+                <instance type="Jogar_instrucoes" uid="241">
                     <properties>
                         <text>Jogar</text>
                         <initial-visibility>Visible</initial-visibility>

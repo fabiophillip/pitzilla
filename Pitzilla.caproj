@@ -2662,6 +2662,59 @@
         <object-type global="1" name="dicionario_mutar_jogo" sid="1023863851663359">
             <plugin id="Dictionary" />
         </object-type>
+        <object-type name="fundo_botao_som_off_on" sid="6062464815700775">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9781427951722124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\botao.png">
+                        <collision-poly>
+                            <point x="0.138889" y="0.138889" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="0.972222" y="0.5" />
+                            <point x="0.833333" y="0.833333" />
+                            <point x="0.5" y="0.972222" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="label_musica" sid="7409267462934524">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="icone_musica_on_off" sid="8063121553440883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="musica_on" pingpong="0" repeatcount="1" repeatto="0" sid="3601645088631777" speed="5">
+                    <frame duration="1" hotspotX="0.500396" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\som_on.png">
+                        <collision-poly>
+                            <point x="0.231562" y="0.228125" />
+                            <point x="0.499603" y="0.003125" />
+                            <point x="0.892149" y="0.10625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.888184" y="0.889844" />
+                            <point x="0.499603" y="0.997656" />
+                            <point x="0.231562" y="0.771875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="musica_off" pingpong="0" repeatcount="1" repeatto="0" sid="5579947823266768" speed="5">
+                    <frame duration="1" hotspotX="0.500396" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\som_off.png">
+                        <collision-poly>
+                            <point x="0.231562" y="0.228125" />
+                            <point x="0.499603" y="0.003125" />
+                            <point x="0.515464" y="0.522656" />
+                            <point x="0.499603" y="0.997656" />
+                            <point x="0.231562" y="0.771875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

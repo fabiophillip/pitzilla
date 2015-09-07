@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="121">
+                <instance type="BackgroundNormal" uid="123">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_moedas" uid="122">
+                <instance type="label_moedas" uid="124">
                     <properties>
                         <text>Moedas:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins" uid="123">
+                <instance type="icone_coins" uid="125">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -100,7 +100,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="X_fim_jogo_coins" uid="124">
+                <instance type="X_fim_jogo_coins" uid="126">
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -127,7 +127,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Botao_voltar_lojinha_musica" uid="125">
+                <instance type="Botao_voltar_lojinha_musica" uid="127">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -149,7 +149,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Texto_voltar_lojinha_musica" uid="126">
+                <instance type="Texto_voltar_lojinha_musica" uid="128">
                     <properties>
                         <text>Voltar</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -176,7 +176,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_comprar_dino" uid="127">
+                <instance type="botao_comprar_dino" uid="129">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -198,7 +198,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_esquerda_comprar_dino" uid="128">
+                <instance type="botao_esquerda_comprar_dino" uid="130">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -220,7 +220,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_direita_comprar_dino" uid="129">
+                <instance type="botao_direita_comprar_dino" uid="131">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -242,7 +242,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="dino_comprar" uid="130">
+                <instance type="dino_comprar" uid="133">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -264,7 +264,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="titulo_lojinha_dinos" uid="131">
+                <instance type="titulo_lojinha_dinos" uid="134">
                     <properties>
                         <text>Dinos</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -291,7 +291,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="nome_dino_comprar" uid="133">
+                <instance type="nome_dino_comprar" uid="135">
                     <properties>
                         <text>nome dino</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -318,7 +318,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins_nao_se_mexe" uid="134">
+                <instance type="icone_coins_nao_se_mexe" uid="136">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -340,7 +340,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="valor_dino_comprar" uid="135">
+                <instance type="valor_dino_comprar" uid="137">
                     <properties>
                         <text>100</text>
                         <initial-visibility>Visible</initial-visibility>

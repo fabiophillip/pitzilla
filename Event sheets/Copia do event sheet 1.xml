@@ -1874,6 +1874,11 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="0" name="Compare value" sid="3540299159070687" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
@@ -2157,6 +2162,11 @@
         <event-block sid="8056112883036859">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2075070315732091" type="System" />
+                <condition id="0" name="Compare value" sid="7181355147517766" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="33" name="Stop all" sid="8268482527146559" type="Audio" />
@@ -2423,6 +2433,23 @@
                     <param id="0" name="Y">228</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="7954208363858981">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="7640385813983493" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="2991715466322886" type="Audio">
+                            <param id="0" name="Tag">nome_musica_selecionada</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="8486486977847531">
             <conditions>
@@ -2450,6 +2477,23 @@
                     <param id="0" name="Y">999999</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="4880478839592881">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="1431286136965948" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="659371724677771" type="Audio">
+                            <param id="0" name="Tag">nome_musica_selecionada</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="8124878739581184">
             <conditions>

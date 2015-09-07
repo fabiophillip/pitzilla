@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="156">
+                <instance type="BackgroundNormal" uid="158">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles" uid="157">
+                <instance type="Controles" uid="159">
                     <properties>
                         <text>Pittzilla</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="158">
+                <instance type="DescricaoControles" uid="160">
                     <properties>
                         <text>Coma o pittsburg</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -105,7 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_menu_instrucoes" uid="159">
+                <instance type="botao_menu_instrucoes" uid="161">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -127,7 +127,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_botao_menu_instrucoes" uid="160">
+                <instance type="texto_botao_menu_instrucoes" uid="162">
                     <properties>
                         <text>Menu</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -154,7 +154,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles2" uid="161">
+                <instance type="Controles2" uid="165">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -179,7 +179,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fundo_barra_pitzilla" uid="162">
+                <instance type="fundo_barra_pitzilla" uid="168">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -201,7 +201,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="165">
+                <instance type="DescricaoControles" uid="169">
                     <properties>
                         <text>Encha a barrinha</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -228,7 +228,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles2" uid="168">
+                <instance type="Controles2" uid="170">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -253,7 +253,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescricaoControles" uid="169">
+                <instance type="DescricaoControles" uid="171">
                     <properties>
                         <text>Toque no dinossauro e se torne o invencível pittzilla!</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -280,7 +280,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="170">
+                <instance type="Seta_instrucoes" uid="172">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -302,7 +302,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="171">
+                <instance type="Seta_instrucoes" uid="173">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -324,7 +324,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="172">
+                <instance type="Seta_instrucoes" uid="174">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -346,7 +346,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="173">
+                <instance type="Seta_instrucoes" uid="175">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -368,7 +368,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="174">
+                <instance type="Seta_instrucoes" uid="176">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -390,7 +390,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles3" uid="175">
+                <instance type="Controles3" uid="177">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -412,7 +412,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="176">
+                <instance type="Seta_instrucoes" uid="178">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -434,7 +434,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_avancar_tutorial2" uid="177">
+                <instance type="botao_avancar_tutorial2" uid="179">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -456,7 +456,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_voltar_tutorial2" uid="178">
+                <instance type="botao_voltar_tutorial2" uid="180">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -478,7 +478,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="pittsburg_imovel" uid="179">
+                <instance type="pittsburg_imovel" uid="181">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -500,7 +500,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="obstaculo_voando" uid="180">
+                <instance type="obstaculo_voando" uid="182">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -522,7 +522,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controles2" uid="181">
+                <instance type="Controles2" uid="183">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -547,7 +547,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="183">
+                <instance type="Seta_instrucoes" uid="184">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -569,7 +569,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="184">
+                <instance type="Seta_instrucoes" uid="185">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -591,7 +591,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Seta_instrucoes" uid="185">
+                <instance type="Seta_instrucoes" uid="186">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
