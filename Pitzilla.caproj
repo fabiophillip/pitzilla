@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Pitzilla</name>
     <description></description>
@@ -2531,7 +2531,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-         <object-type name="dina_lojinha_main" sid="4372398785584341">
+        <object-type name="dina_lojinha_main" sid="4372398785584341">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7377125289882425" speed="5">
@@ -2693,15 +2693,15 @@
         <event-sheet>EventosInstrucoes4.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="222">
+        <global-instance type="Touch" uid="242">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="223" />
-        <global-instance type="LocalStorage" uid="224" />
-        <global-instance type="Browser" uid="225" />
-        <global-instance type="Audio" uid="226">
+        <global-instance type="Keyboard" uid="243" />
+        <global-instance type="LocalStorage" uid="244" />
+        <global-instance type="Browser" uid="245" />
+        <global-instance type="Audio" uid="246">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

@@ -56,6 +56,9 @@
         <event-block sid="1986736022243448">
             <conditions>
                 <condition behavior="Platform" id="2" name="Is on floor" sid="8235949233646939" type="Player" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6633297483410752" type="Player">
+                    <param id="0" name="Instance variable">acabou_de_ser_revivido</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="6665297735521825" type="Player">
@@ -1858,6 +1861,10 @@
                     <param id="0" name="Variable">reiniciar_musica</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-13" name="Set boolean" sid="6846439293145497" type="Player">
+                    <param id="0" name="Instance variable">acabou_de_ser_revivido</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1917326782822648">
@@ -2827,6 +2834,23 @@
                 <action id="4" name="Set animation" sid="6734820775463362" type="Player">
                     <param id="0" name="Animation">sprite_do_dino &amp; &quot;_com_superpulo&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2367943392725523">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="2798706947485018" type="Player">
+                    <param id="0" name="Instance variable">acabou_de_ser_revivido</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="3696710919216934" type="Player">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">95.062</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="862307397107542" type="Player">
+                    <param id="0" name="Instance variable">acabou_de_ser_revivido</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
