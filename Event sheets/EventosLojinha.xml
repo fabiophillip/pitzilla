@@ -45,6 +45,11 @@
                 <condition id="5" inverted="1" name="Is tag playing" sid="3562274622231959" type="Audio">
                     <param id="0" name="Tag">&quot;merlin_s_gb_noise_23rd_day_of_summer&quot;</param>
                 </condition>
+                <condition id="0" name="Compare value" sid="8597597940500476" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="33" name="Stop all" sid="5256496556934113" type="Audio" />

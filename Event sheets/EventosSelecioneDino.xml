@@ -47,15 +47,28 @@
                 <action id="5" name="Check item exists" sid="7823770291512723" type="LocalStorage">
                     <param id="0" name="Key">&quot;ja_comprou_dino_0&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="8679125290548257" type="Audio" />
-                <action id="7" name="Play (by name)" sid="2625357466561163" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
             </actions>
+            <sub-events>
+                <event-block sid="2188219155376084">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="7502314389673841" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="9517012629586434" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="6201130720518024" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4240885227673836">
             <conditions>
@@ -282,14 +295,6 @@
                 <action id="0" name="Set text" sid="3465690285949848" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;Steel road&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="4142859822574287" type="Audio" />
-                <action id="7" name="Play (by name)" sid="2776730658634966" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="8226219896744776" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">0</param>
@@ -299,6 +304,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="9142449907317688">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="4550751538789663" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="9079421322330126" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="9151769021371761" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4734025442693484">
             <conditions>
@@ -322,14 +348,6 @@
                 <action id="0" name="Set text" sid="1024070034990866" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;So good&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="1636301819781301" type="Audio" />
-                <action id="7" name="Play (by name)" sid="2097405838428287" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="1748662426771779" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">1</param>
@@ -339,6 +357,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="7272361761063749">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="5244322341528762" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="6948970416360485" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="8009330858323108" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4924407167772752">
             <conditions>
@@ -362,14 +401,6 @@
                 <action id="0" name="Set text" sid="7909334816646908" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;A day in the sun&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="6433548229051779" type="Audio" />
-                <action id="7" name="Play (by name)" sid="1209643905212913" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;a_day_in_the_sun&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="8587587043742002" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">2</param>
@@ -379,6 +410,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="5538578641615439">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="7742878763181565" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="43445594446251" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="5270751993260499" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;a_day_in_the_sun&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4822887921234397">
             <conditions>
@@ -402,14 +454,6 @@
                 <action id="0" name="Set text" sid="7791554410706132" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;Bold valor&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="2550306222559371" type="Audio" />
-                <action id="7" name="Play (by name)" sid="4006978055467786" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;bold_valor&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="4043224602616093" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">3</param>
@@ -419,6 +463,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="4117785972269299">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="4297505774706166" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="710492983577371" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="839873697327556" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;bold_valor&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="1286664911362541">
             <conditions>
@@ -442,14 +507,6 @@
                 <action id="0" name="Set text" sid="360139849017441" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;Fourth and two&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="9654086937905415" type="Audio" />
-                <action id="7" name="Play (by name)" sid="1089048125528953" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;fourth_and_two&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="7878451324119984" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">4</param>
@@ -459,6 +516,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="8288692287281322">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="3134722850295258" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="3480590513026805" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="9121462145124165" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;fourth_and_two&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="1826200480827024">
             <conditions>
@@ -482,14 +560,6 @@
                 <action id="0" name="Set text" sid="542832202031947" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;Goofy loop&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="4455615052546087" type="Audio" />
-                <action id="7" name="Play (by name)" sid="1575540835638268" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;goofy_loop&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="4526225444100715" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">5</param>
@@ -499,6 +569,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="5437908679759858">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="1033211813935572" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="5259902896367735" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="4858830343081681" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;goofy_loop&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="6726419855868175">
             <conditions>
@@ -522,14 +613,6 @@
                 <action id="0" name="Set text" sid="8191183267588141" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;Sailor&apos;s piccolo&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="5003213330061629" type="Audio" />
-                <action id="7" name="Play (by name)" sid="8146443022557013" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;sailor_apostrofo_s_piccolo&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="3968839241001083" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">6</param>
@@ -539,6 +622,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="5053340297490807">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="6168788647756826" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="1276235592459396" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="1379743382333212" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;sailor_apostrofo_s_piccolo&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="6218118632724739">
             <conditions>
@@ -562,14 +666,6 @@
                 <action id="0" name="Set text" sid="977598690107897" type="nome_musica_selecionada_pro_jogo">
                     <param id="0" name="Text">&quot;Electro go funky&quot;</param>
                 </action>
-                <action id="33" name="Stop all" sid="7891057940147463" type="Audio" />
-                <action id="7" name="Play (by name)" sid="9958877964522056" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Add key" sid="6093143301344105" type="dicionario_dino_e_musica_selecionada">
                     <param id="0" name="Key">&quot;musica_selecionada&quot;</param>
                     <param id="1" name="Value">7</param>
@@ -579,6 +675,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="6506476599941099">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="3484899708568709" type="dicionario_mutar_jogo">
+                            <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4509157895964542" type="Audio" />
+                        <action id="7" name="Play (by name)" sid="9962647595678646" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-5</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="8103007831318403">
             <conditions>

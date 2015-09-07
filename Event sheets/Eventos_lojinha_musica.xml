@@ -54,6 +54,11 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="0" name="Compare value" sid="156492550678295" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="9729182270510658" type="Nome_musica">
@@ -87,6 +92,11 @@
                     <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="0" name="Compare value" sid="1671889587324067" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
@@ -122,6 +132,11 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="0" name="Compare value" sid="1449887874101661" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="8965399302559489" type="Nome_musica">
@@ -155,6 +170,11 @@
                     <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="0" name="Compare value" sid="6724402518935102" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
@@ -190,6 +210,11 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="0" name="Compare value" sid="2958152280520615" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="6663278627766473" type="Nome_musica">
@@ -224,6 +249,11 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="0" name="Compare value" sid="7390332219608886" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="2142013446704173" type="Nome_musica">
@@ -257,6 +287,11 @@
                     <param id="0" name="Variable">mudar_musica_atual_lojinha</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="0" name="Compare value" sid="1934730255679425" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>

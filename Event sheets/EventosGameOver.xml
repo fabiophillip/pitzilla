@@ -121,6 +121,11 @@
         <event-block sid="4908978734670577">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="9104440646578451" type="System" />
+                <condition id="0" name="Compare value" sid="9169409637280092" type="dicionario_mutar_jogo">
+                    <param id="0" name="Key">&quot;tocar_musica&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="33" name="Stop all" sid="2425904719057695" type="Audio" />
