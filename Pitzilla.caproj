@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Pitzilla</name>
     <description></description>
@@ -37,6 +37,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>MenuInicial</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -2530,6 +2531,137 @@
                 </animation>
             </animation-folder>
         </object-type>
+         <object-type name="dina_lojinha_main" sid="4372398785584341">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7377125289882425" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda2.png">
+                        <collision-poly>
+                            <point x="0.0823529" y="0.07" />
+                            <point x="0.494118" y="0.04" />
+                            <point x="0.847059" y="0.13" />
+                            <point x="0.835294" y="0.5" />
+                            <point x="0.788235" y="0.82" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.258824" y="0.78" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dinos_comprar" sid="4551016301171191">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="natural_de_cenoura" sid="7662448647480768">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3147878837025209" speed="5">
+                    <frame duration="1" hotspotX="0.503311" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\pitts_cenoura.png">
+                        <collision-poly>
+                            <point x="0.15894" y="0.24" />
+                            <point x="0.496689" y="0" />
+                            <point x="0.847682" y="0.23" />
+                            <point x="0.953642" y="0.5" />
+                            <point x="0.907285" y="0.86" />
+                            <point x="0.496689" y="0.99" />
+                            <point x="0.0860927" y="0.87" />
+                            <point x="0.0993377" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nome_sanduiche_natural" sid="4695824641387303">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dino_superpulo_instrucoes" sid="3944027587127454">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="784406701902327">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5172057118895165" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda1.png">
+                        <collision-poly>
+                            <point x="0.0705882" y="0.06" />
+                            <point x="0.494118" y="0.19" />
+                            <point x="0.823529" y="0.15" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda2.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mao_superpulo" sid="3282546324726311">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4868370854217636" speed="2">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508475" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\mao2.png">
+                        <collision-poly>
+                            <point x="0.135593" y="0.135593" />
+                            <point x="0.491525" y="0" />
+                            <point x="0.559322" y="0.440678" />
+                            <point x="0.898305" y="0.491525" />
+                            <point x="0.864407" y="0.864407" />
+                            <point x="0.491525" y="0.830508" />
+                            <point x="0.40678" y="0.59322" />
+                            <point x="0.355932" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508475" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\mao1.png">
+                        <collision-poly>
+                            <point x="0.355932" y="0.355932" />
+                            <point x="0.491525" y="0.338983" />
+                            <point x="0.559322" y="0.440678" />
+                            <point x="0.898305" y="0.491525" />
+                            <point x="0.864407" y="0.864407" />
+                            <point x="0.491525" y="0.830508" />
+                            <point x="0.40678" y="0.59322" />
+                            <point x="0.355932" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="superpulo_texto" sid="6474895795230113">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="area_colisao_dino" sid="8324666942575423">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3512688803382124">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3539114528969263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="area_chao_superpulo" sid="6904768273414969">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7195745359623344">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3405232595661502" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="dicionario_mutar_jogo" sid="1023863851663359">
+            <plugin id="Dictionary" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -2601,6 +2733,10 @@
         <file name="goofy_loop.ogg" />
         <file name="sailor_apostrofo_s_piccolo.m4a" />
         <file name="sailor_apostrofo_s_piccolo.ogg" />
+        <file name="next_stop_nashville_bom_gameover.m4a" />
+        <file name="rough_rider_bom_menu_inicial.m4a" />
+        <file name="next_stop_nashville_bom_gameover.ogg" />
+        <file name="rough_rider_bom_menu_inicial.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

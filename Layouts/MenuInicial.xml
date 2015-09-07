@@ -278,6 +278,8 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="dicionario_mutar_jogo" uid="239" />
+    </nonworld-instances>
     <effects />
 </c2layout>

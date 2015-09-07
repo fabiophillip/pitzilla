@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Copia do event sheet 1</name>
     <events>
+        <variable constant="0" name="jogo_pausado" sid="3227794142382978" static="0" type="number">0</variable>
         <variable constant="0" name="nome_musica_selecionada" sid="3316336967418886" static="0" type="text">steel_road</variable>
         <variable constant="0" name="pitts_natural_timer" sid="6399776276138255" static="0" type="number">1000</variable>
         <variable comment="tempo pra adicionar moedinha" constant="0" name="adicionar_moedinha_timer" sid="5820904437958688" static="0" type="number">2000</variable>
@@ -63,12 +64,15 @@
             </actions>
         </event-block>
         <comment>On any user input at all, make the character jump.</comment>
-        <event-block any="1" sid="5949729022484992">
+        <event-block sid="3011188884334795">
             <conditions>
-                <condition id="0" name="On any touch start" sid="3221211248037705" type="Touch" />
+                <condition id="0" name="On any touch start" sid="9700047522138615" type="Touch" />
+                <condition id="4" inverted="1" name="Is touching object" sid="1085464746165074" type="Touch">
+                    <param id="0" name="Object">pause_button</param>
+                </condition>
             </conditions>
             <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="1498383223974204" type="Player">
+                <action behavior="Platform" id="7" name="Simulate control" sid="3647736046203376" type="Player">
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
@@ -257,6 +261,11 @@
         <event-block sid="9449437107514063">
             <conditions>
                 <condition id="-1" name="Every tick" sid="5625658735091865" type="System" />
+                <condition id="-14" name="Compare variable" sid="9296538538844443" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-11" name="Subtract from" sid="3846432943882501" type="System">
@@ -279,6 +288,11 @@
         <event-block sid="4968113015544099">
             <conditions>
                 <condition id="-1" name="Every tick" sid="6193818908977936" type="System" />
+                <condition id="-14" name="Compare variable" sid="3900909559535179" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-11" name="Subtract from" sid="3709072192735282" type="System">
@@ -290,6 +304,11 @@
         <event-block sid="2050849176006756">
             <conditions>
                 <condition id="-1" name="Every tick" sid="7903981656118195" type="System" />
+                <condition id="-14" name="Compare variable" sid="4719057985063136" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-11" name="Subtract from" sid="9226782185460741" type="System">
@@ -453,6 +472,11 @@
                 <condition id="-14" name="Compare variable" sid="7742042262206131" type="System">
                     <param id="0" name="Variable">tempo_restante_pittschicken</param>
                     <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3663352251480503" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
@@ -640,6 +664,11 @@
                 </condition>
                 <condition id="-8" name="Is boolean instance variable set" sid="1362114403791424" type="Player">
                     <param id="0" name="Instance variable">virou_pitts_batata</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="416495292962573" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="8150097173399718" type="System">
                     <param id="0" name="Variable">tempo_restante_batata</param>
@@ -895,6 +924,11 @@
             <conditions>
                 <condition id="-8" name="Is boolean instance variable set" sid="3351983868683988" type="Player">
                     <param id="0" name="Instance variable">virou_pitzilla</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7302705494509105" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions />
@@ -1157,6 +1191,11 @@
                 <condition id="-8" name="Is boolean instance variable set" sid="741530907746333" type="Player">
                     <param id="0" name="Instance variable">virou_pitts_batata</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="3047382934358452" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-23" name="Move at angle" sid="6466249535089296" type="pittsburg">
@@ -1274,6 +1313,11 @@
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="5561651992704808" type="System">
                     <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9879416205500334" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1840,7 +1884,7 @@
                             <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;steel_road&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="1105153908001937" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -1862,7 +1906,7 @@
                             <param id="1" name="Audio file name">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="8643335848493349" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -1884,7 +1928,7 @@
                             <param id="1" name="Audio file name">&quot;a_day_in_the_sun&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;a_day_in_the_sun&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="5081302600601487" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -1906,7 +1950,7 @@
                             <param id="1" name="Audio file name">&quot;bold_valor&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;bold_valor&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="2706189115218983" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -1928,7 +1972,7 @@
                             <param id="1" name="Audio file name">&quot;fourth_and_two&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;fourth_and_two&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="7332609727969424" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -1950,7 +1994,7 @@
                             <param id="1" name="Audio file name">&quot;goofy_loop&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;goofy_loop&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="4429856561890085" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -1972,7 +2016,7 @@
                             <param id="1" name="Audio file name">&quot;sailor_apostrofo_s_piccolo&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;sailor_apostrofo_s_piccolo&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="9983437759950575" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -1994,7 +2038,7 @@
                             <param id="1" name="Audio file name">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="4042766621647632" type="System">
                             <param id="0" name="Variable">reiniciar_musica</param>
@@ -2125,7 +2169,7 @@
                             <param id="1" name="Audio file name">&quot;steel_road&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;steel_road&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="2159261024930664" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2147,7 +2191,7 @@
                             <param id="1" name="Audio file name">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;_so_good_upbeat_brass_pop_rock&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="6205348185235071" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2169,7 +2213,7 @@
                             <param id="1" name="Audio file name">&quot;a_day_in_the_sun&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;a_day_in_the_sun&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="267611024139338" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2191,7 +2235,7 @@
                             <param id="1" name="Audio file name">&quot;bold_valor&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;bold_valor&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="5508772761154938" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2213,7 +2257,7 @@
                             <param id="1" name="Audio file name">&quot;fourth_and_two&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;fourth_and_two&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="1881795949986479" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2235,7 +2279,7 @@
                             <param id="1" name="Audio file name">&quot;goofy_loop&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;goofy_loop&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="3029015365482194" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2257,7 +2301,7 @@
                             <param id="1" name="Audio file name">&quot;sailor_apostrofo_s_piccolo&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;sailor_apostrofo_s_piccolo&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="1046363185648575" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2279,7 +2323,7 @@
                             <param id="1" name="Audio file name">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-5</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;_electro_go_funky_electronica_breakbeat&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="8715791919830266" type="System">
                             <param id="0" name="Variable">nome_musica_selecionada</param>
@@ -2360,7 +2404,14 @@
                 <action id="-13" name="Set time scale" sid="245896643585907" type="System">
                     <param id="0" name="Time scale">0.0</param>
                 </action>
-                <action id="33" name="Stop all" sid="3515674541194439" type="Audio" />
+                <action id="2" name="Set muted" sid="3515674541194439" type="Audio">
+                    <param id="0" name="Tag">nome_musica_selecionada</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7952619743857785" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-2" name="Set Y" sid="9739768454160568" type="botao_continuar_apos_pausa">
                     <param id="0" name="Y">228</param>
                 </action>
@@ -2380,12 +2431,13 @@
                 <action id="-13" name="Set time scale" sid="9249344525587476" type="System">
                     <param id="0" name="Time scale">1.0</param>
                 </action>
-                <action id="7" name="Play (by name)" sid="1358290718544562" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">nome_musica_selecionada</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                <action id="2" name="Set muted" sid="2030876141625823" type="Audio">
+                    <param id="0" name="Tag">nome_musica_selecionada</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8968194387584906" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="-2" name="Set Y" sid="9102342333576535" type="botao_continuar_apos_pausa">
                     <param id="0" name="Y">999999</param>
@@ -2674,6 +2726,11 @@
                 </condition>
                 <condition id="-6" name="Every X seconds" sid="3409998522970501" type="System">
                     <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5523717581828141" type="System">
+                    <param id="0" name="Variable">jogo_pausado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9942018674600674" type="System">
                     <param id="0" name="Variable">tempo_restante_superpulo</param>

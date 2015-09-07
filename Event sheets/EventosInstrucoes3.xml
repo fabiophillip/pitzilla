@@ -17,6 +17,9 @@
                 <action id="-1" name="Set X" sid="7546151742956537" type="hamburguer_atraido_instrucoes">
                     <param id="0" name="X">hamburguer_atraido_instrucoes.X - 30</param>
                 </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="6075686570726772" type="dino_superpulo_instrucoes">
+                    <param id="0" name="Control">2</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9112550837307141">
@@ -92,6 +95,16 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="7250587492537494" type="System">
                     <param id="0" name="Layout">Instrucoes4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3047258550511144">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1507076066020944" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="9729230186725462" type="dino_superpulo_instrucoes">
+                    <param id="0" name="Jump strength">650</param>
                 </action>
             </actions>
         </event-block>

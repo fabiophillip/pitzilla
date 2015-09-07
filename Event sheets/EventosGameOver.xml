@@ -99,6 +99,7 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="7653647674893935" type="Audio" />
                 <action id="-2" name="Go to layout" sid="9284638967711712" type="System">
                     <param id="0" name="Layout">MenuInicial</param>
                 </action>
@@ -123,6 +124,13 @@
             </conditions>
             <actions>
                 <action id="33" name="Stop all" sid="2425904719057695" type="Audio" />
+                <action id="7" name="Play (by name)" sid="5211097218530617" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;next_stop_nashville_bom_gameover&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
