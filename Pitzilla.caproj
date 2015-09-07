@@ -83,6 +83,7 @@
                 <instance-variable comment="quando o dinossauro eh pitzilla, ele destroi obstaculos" name="destroi_obstaculos" sid="6983640693306643" type="boolean" />
                 <instance-variable name="virou_dino_superpulo" sid="6021407320329367" type="boolean" />
                 <instance-variable name="dino_perdendo_poder_superpulo" sid="6859632478105566" type="boolean" />
+                <instance-variable comment="usado p fazer a camera voltar ao normal assim q o dino revive" name="acabou_de_ser_revivido" sid="5928325831266081" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="8762862371753892">
@@ -2504,6 +2505,28 @@
                             <point x="0.0025" y="0.967742" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fundo_popup_deseja_mesmo_comprar" sid="1839897524338415">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1085022851828338" speed="5">
+                    <frame duration="1" hotspotX="0.501538" hotspotY="0.501608" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\background_opopup_fim_de_jogo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="confirmar_compra" sid="9616109274316684">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dinheiro_insuficiente" sid="6071208795844385">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite3" sid="4554780110909988">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7520106128530475" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\botao_fim_jogo.png" />
                 </animation>
             </animation-folder>
         </object-type>

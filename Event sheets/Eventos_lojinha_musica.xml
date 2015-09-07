@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos_lojinha_musica</name>
     <events>
+        <variable constant="0" name="tempo_popup_confirmar_compra" sid="7892038477357538" static="0" type="number">-1</variable>
         <variable constant="0" name="mudar_musica_atual_lojinha" sid="1131735518280081" static="0" type="number">1</variable>
         <variable constant="0" name="ja_comprou_musica_0" sid="4821216780495423" static="0" type="text">&quot;false&quot;</variable>
         <variable constant="0" name="ja_comprou_musica_1" sid="827380781809622" static="0" type="text">&quot;false&quot;</variable>
@@ -922,10 +923,11 @@
                 </action>
             </actions>
         </event-block>
+        <comment>O tempo de 0.2 é necessário! Senão o sistema contaria como se vc estivesse clicando no botao botao_comprar_musica novamente e reabriria a gui </comment>
         <event-block sid="2805040624737446">
             <conditions>
                 <condition id="17" name="On tap object" sid="1100363968427898" type="Touch">
-                    <param id="0" name="Object">botao_comprar_musica</param>
+                    <param id="0" name="Object">Botao_sim</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="6168880508775469" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
@@ -941,6 +943,11 @@
                     <param id="0" name="Variable">ja_comprou_musica_0</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6097392119379678" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -963,12 +970,29 @@
                 <action id="0" name="Set text" sid="5191555156434785" type="label_moedas">
                     <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
                 </action>
+                <action id="0" name="Set text" sid="6411440065346561" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5879818023838102" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="3789356285785767" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="378715888799148" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="171494379381131" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8053460492714387">
             <conditions>
                 <condition id="17" name="On tap object" sid="9535458629082132" type="Touch">
-                    <param id="0" name="Object">botao_comprar_musica</param>
+                    <param id="0" name="Object">Botao_sim</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="553624964505819" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
@@ -984,6 +1008,11 @@
                     <param id="0" name="Variable">ja_comprou_musica_1</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8434961466705427" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1006,12 +1035,29 @@
                 <action id="0" name="Set text" sid="4452131434701586" type="label_moedas">
                     <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
                 </action>
+                <action id="0" name="Set text" sid="5299388680406595" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5137705131194303" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="8457050951768092" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="3812530764964544" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5193710610615627" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2700643861756889">
             <conditions>
                 <condition id="17" name="On tap object" sid="3772002176547803" type="Touch">
-                    <param id="0" name="Object">botao_comprar_musica</param>
+                    <param id="0" name="Object">Botao_sim</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="4849883018899163" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
@@ -1027,6 +1073,11 @@
                     <param id="0" name="Variable">ja_comprou_musica_2</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4462035116063908" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1049,12 +1100,29 @@
                 <action id="0" name="Set text" sid="1582930817871775" type="label_moedas">
                     <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
                 </action>
+                <action id="-4" name="Set layer visible" sid="4153438836835258" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="2751312416523028" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="3621709416252111" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4754738386456646" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2801591088745336" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5594886340028015">
             <conditions>
                 <condition id="17" name="On tap object" sid="3280060372889558" type="Touch">
-                    <param id="0" name="Object">botao_comprar_musica</param>
+                    <param id="0" name="Object">Botao_sim</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9399059714044778" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
@@ -1070,6 +1138,11 @@
                     <param id="0" name="Variable">ja_comprou_musica_3</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8396407102380631" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1092,12 +1165,29 @@
                 <action id="0" name="Set text" sid="270528513722334" type="label_moedas">
                     <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
                 </action>
+                <action id="-4" name="Set layer visible" sid="9984454918426117" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="7192906437074337" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="3930993919795648" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7713858750265848" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3935736465553665" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="48441706285677">
             <conditions>
                 <condition id="17" name="On tap object" sid="3444363469573387" type="Touch">
-                    <param id="0" name="Object">botao_comprar_musica</param>
+                    <param id="0" name="Object">Botao_sim</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3493382341002458" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
@@ -1113,6 +1203,11 @@
                     <param id="0" name="Variable">ja_comprou_musica_4</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5671060632549907" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1135,12 +1230,29 @@
                 <action id="0" name="Set text" sid="5478453248516343" type="label_moedas">
                     <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
                 </action>
+                <action id="-4" name="Set layer visible" sid="2385510383753462" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="8524626118804299" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="2017938567828925" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-16" name="Wait" sid="6192577417984519" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9035085456109007" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2317304066017759">
             <conditions>
                 <condition id="17" name="On tap object" sid="8794224290669273" type="Touch">
-                    <param id="0" name="Object">botao_comprar_musica</param>
+                    <param id="0" name="Object">Botao_sim</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2269188930692261" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
@@ -1156,6 +1268,11 @@
                     <param id="0" name="Variable">ja_comprou_musica_5</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5549556138483273" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1178,12 +1295,29 @@
                 <action id="0" name="Set text" sid="9139513386724594" type="label_moedas">
                     <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
                 </action>
+                <action id="-4" name="Set layer visible" sid="7315763749343305" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="9556025713688174" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="8509812107843474" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-16" name="Wait" sid="6072004562440751" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8832690159717185" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="809490147318316">
             <conditions>
                 <condition id="17" name="On tap object" sid="3640840817492014" type="Touch">
-                    <param id="0" name="Object">botao_comprar_musica</param>
+                    <param id="0" name="Object">Botao_sim</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="5304686381563746" type="System">
                     <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
@@ -1199,6 +1333,11 @@
                     <param id="0" name="Variable">ja_comprou_musica_6</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3412285014011151" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1220,6 +1359,327 @@
                 </action>
                 <action id="0" name="Set text" sid="2059956978210129" type="label_moedas">
                     <param id="0" name="Text">&quot;Moedas: &quot; &amp; float(coin)</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="6545788373741516" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="4843022958485856" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="3029095017048168" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8808510577995757" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9034470910342239" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4594005528694077">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9743121299921273" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="9615438500179089" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="5398464393391741" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="8374046556788271" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6694667572546954">
+            <conditions>
+                <condition id="17" name="On tap object" sid="6879270586110025" type="Touch">
+                    <param id="0" name="Object">botao_comprar_musica</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="1693204108919694" type="botao_comprar_musica" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="7113399463377598" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4957301951138088" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4761775109435389" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6139621638477926">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9032927682032243" type="Touch">
+                    <param id="0" name="Object">botao_nao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="493291004786463" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="269152165426451" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9996358652148215" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8294689815771655" type="botao_comprar_musica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8769726839594494">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8019649969226528" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8436752908145886" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3147554713969713" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9888214313474242" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2399953080164974" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4375684066246705" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;Dinheiro insuficiente&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5474388603224511">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7861743393663468" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4905962637971522" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="95423917353086" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">80</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3142125030281557" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7502570921562771" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5260744249297" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;Dinheiro insuficiente&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8908806602886904">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7023500940804668" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9099285486428249" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8270139662171638" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">120</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4641787391085046" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7537706049353918" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3856637775835429" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;Dinheiro insuficiente&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5988157345268865">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7415340404166562" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7445330245787138" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5403472225276428" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">160</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7184444005945244" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8511426529388515" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7772566976336621" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;Dinheiro insuficiente&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9250708588307723">
+            <conditions>
+                <condition id="17" name="On tap object" sid="5164568907922854" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3600111167329985" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7435005653571464" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">200</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6873830004314171" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8399261098185467" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3861507639504083" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;Dinheiro insuficiente&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2407946389130441">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3980932351992663" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1358827308193865" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9506463701250691" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">240</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5785782093771433" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8170999745119601" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6211537559601654" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;Dinheiro insuficiente&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5036879619239895">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9986180996326527" type="Touch">
+                    <param id="0" name="Object">Botao_sim</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2561981890749543" type="System">
+                    <param id="0" name="Variable">numero_musica_tocando_lojinha</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2009814353682742" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">280</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3926051131624041" type="System">
+                    <param id="0" name="Variable">ja_comprou_musica_6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;false&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="772229090054185" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5441889087138487" type="dinheiro_insuficiente">
+                    <param id="0" name="Text">&quot;Dinheiro insuficiente&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8921679228257898">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5003631371766689" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7140020530825234" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1698353252673833" type="System">
+                    <param id="0" name="Variable">tempo_popup_confirmar_compra</param>
+                    <param id="1" name="Value">tempo_popup_confirmar_compra + 1</param>
                 </action>
             </actions>
         </event-block>
