@@ -42,15 +42,18 @@
         <event-block sid="3643876826418673">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="5400715924257734" type="System" />
-                <condition id="4" inverted="1" name="Is any playing" sid="7957999255293614" type="Audio" />
+                <condition id="5" inverted="1" name="Is tag playing" sid="3562274622231959" type="Audio">
+                    <param id="0" name="Tag">&quot;merlin_s_gb_noise_23rd_day_of_summer&quot;</param>
+                </condition>
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="5256496556934113" type="Audio" />
                 <action id="7" name="Play (by name)" sid="438216165405727" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;rough_rider_bom_menu_inicial&quot;</param>
+                    <param id="1" name="Audio file name">&quot;merlin_s_gb_noise_23rd_day_of_summer&quot;</param>
                     <param id="3" name="Loop">1</param>
                     <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="2" name="Tag (optional)">&quot;merlin_s_gb_noise_23rd_day_of_summer&quot;</param>
                 </action>
             </actions>
         </event-block>

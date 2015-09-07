@@ -595,7 +595,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="9978063975951618" type="nome_dino_selecionado">
-                    <param id="0" name="Text">&quot;PIttssauro&quot;</param>
+                    <param id="0" name="Text">&quot;Pittssauro&quot;</param>
                 </action>
                 <action id="4" name="Set animation" sid="287905787499971" type="dino_select_char">
                     <param id="0" name="Animation">&quot;dino&quot;</param>
@@ -631,7 +631,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="9791817714735479" type="nome_dino_selecionado">
-                    <param id="0" name="Text">&quot;PIttssaura&quot;</param>
+                    <param id="0" name="Text">&quot;Pittssaura&quot;</param>
                 </action>
                 <action id="4" name="Set animation" sid="7115574456883141" type="dino_select_char">
                     <param id="0" name="Animation">&quot;dina&quot;</param>

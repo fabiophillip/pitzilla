@@ -111,7 +111,9 @@
         <event-block sid="4442165371752057">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1802322558503755" type="System" />
-                <condition id="4" inverted="1" name="Is any playing" sid="7616528548649661" type="Audio" />
+                <condition id="5" inverted="1" name="Is tag playing" sid="7616528548649661" type="Audio">
+                    <param id="0" name="Tag">&quot;rough_rider_bom_menu_inicial&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="33" name="Stop all" sid="9058002106226083" type="Audio" />
@@ -120,7 +122,7 @@
                     <param id="1" name="Audio file name">&quot;rough_rider_bom_menu_inicial&quot;</param>
                     <param id="3" name="Loop">1</param>
                     <param id="4" name="Volume">-5</param>
-                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="2" name="Tag (optional)">&quot;rough_rider_bom_menu_inicial&quot;</param>
                 </action>
             </actions>
         </event-block>

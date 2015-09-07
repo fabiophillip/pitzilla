@@ -100,5 +100,23 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="971133824941029">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7884511547897163" type="System" />
+                <condition id="5" inverted="1" name="Is tag playing" sid="1917616293719143" type="Audio">
+                    <param id="0" name="Tag">&quot;horse_and_buggy&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="456948106837813" type="Audio" />
+                <action id="7" name="Play (by name)" sid="6679168408531001" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;horse_and_buggy&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;horse_and_buggy&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
