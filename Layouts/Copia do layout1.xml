@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="6">
+                <instance type="TiledBackground" uid="0">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -80,7 +80,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Player" uid="7">
+                <instance type="Player" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -130,7 +130,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Block" uid="8">
+                <instance type="Block" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -167,7 +167,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DinoObstaculo" uid="50">
+                <instance type="DinoObstaculo" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -223,7 +223,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Pterodatilo" uid="51">
+                <instance type="Pterodatilo" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -245,7 +245,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="CliqueEmUmaPosicaoParaReviverPersonagem" uid="52">
+                <instance type="CliqueEmUmaPosicaoParaReviverPersonagem" uid="11">
                     <properties>
                         <text>Clique em alguma posição para reviver o personagem</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -272,7 +272,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="pause_button" uid="139">
+                <instance type="pause_button" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -313,7 +313,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="pittsburg" uid="4">
+                <instance type="pittsburg" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -366,7 +366,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="DistanceDisplay" uid="9">
+                <instance type="DistanceDisplay" uid="18">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -393,7 +393,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fundo_barra_pitzilla" uid="5">
+                <instance type="fundo_barra_pitzilla" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -415,7 +415,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="frente_barra_pitzilla" uid="14">
+                <instance type="frente_barra_pitzilla" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -440,7 +440,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barra_nome_pittzilla" uid="15">
+                <instance type="barra_nome_pittzilla" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -462,7 +462,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="pittschicken" uid="16">
+                <instance type="pittschicken" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -496,7 +496,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="batata" uid="17">
+                <instance type="batata" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -549,7 +549,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_popup_gameover" uid="53">
+                <instance type="background_popup_gameover" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -571,7 +571,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cabeca_dino_gameover" uid="54">
+                <instance type="cabeca_dino_gameover" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -593,7 +593,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GameOverTextoPopup" uid="55">
+                <instance type="GameOverTextoPopup" uid="26">
                     <properties>
                         <text>Game  Over</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -620,7 +620,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ContinuarJogando" uid="56">
+                <instance type="ContinuarJogando" uid="27">
                     <properties>
                         <text>Continuar jogando?</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -647,7 +647,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_moedas" uid="57">
+                <instance type="label_moedas" uid="28">
                     <properties>
                         <text>Moedas:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -674,7 +674,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins" uid="58">
+                <instance type="icone_coins" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -696,7 +696,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="X_fim_jogo_coins" uid="59">
+                <instance type="X_fim_jogo_coins" uid="30">
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -723,7 +723,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="moedinha_menor" uid="60">
+                <instance type="moedinha_menor" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -748,7 +748,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Menos50" uid="61">
+                <instance type="Menos50" uid="32">
                     <properties>
                         <text>- 5</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -778,7 +778,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Botao_sim" uid="62">
+                <instance type="Botao_sim" uid="33">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -800,7 +800,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_nao" uid="63">
+                <instance type="botao_nao" uid="34">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -822,7 +822,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sim" uid="64">
+                <instance type="sim" uid="35">
                     <properties>
                         <text>Sim</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -849,7 +849,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="nao" uid="65">
+                <instance type="nao" uid="36">
                     <properties>
                         <text>Não</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -895,7 +895,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_popup_pause" uid="140">
+                <instance type="background_popup_pause" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -917,7 +917,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Pittstop" uid="141">
+                <instance type="Pittstop" uid="38">
                     <properties>
                         <text>Pittstop</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -944,7 +944,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_continuar_apos_pausa" uid="142">
+                <instance type="botao_continuar_apos_pausa" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -966,7 +966,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cabeca_dino_gameover" uid="143">
+                <instance type="cabeca_dino_gameover" uid="40">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -988,7 +988,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Texto_botao_continuar_apos_pausa" uid="144">
+                <instance type="Texto_botao_continuar_apos_pausa" uid="41">
                     <properties>
                         <text>Continuar</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1015,7 +1015,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sanduiche_natural" uid="145">
+                <instance type="sanduiche_natural" uid="42">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1049,7 +1049,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="moedinha_pegar" uid="146">
+                <instance type="moedinha_pegar" uid="43">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

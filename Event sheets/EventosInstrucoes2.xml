@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosInstrucoes2</name>
+    <events>
+        <event-block sid="2883249048704601">
+            <conditions>
+                <condition id="17" name="On tap object" sid="5633245480187784" type="Touch">
+                    <param id="0" name="Object">botao_menu_instrucoes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6093732996127722" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1629774443210868">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1666294446997727" type="Touch">
+                    <param id="0" name="Object">botao_voltar_tutorial2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8744802086000445" type="System">
+                    <param id="0" name="Layout">Instrucoes1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2389130695393073">
+            <conditions>
+                <condition id="17" name="On tap object" sid="2783787606512676" type="Touch">
+                    <param id="0" name="Object">botao_avancar_tutorial2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="633045573186922" type="System">
+                    <param id="0" name="Layout">Instrucoes3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9668513786552432">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="9376678508528564" type="obstaculo_voando">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">200</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="8499529814986357" type="obstaculo_voando">
+                    <param id="0" name="X">422</param>
+                </action>
+                <action id="-2" name="Set Y" sid="3131360027773566" type="obstaculo_voando">
+                    <param id="0" name="Y">273</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2023846214796608">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9540184623370273" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="5549341227392874" type="obstaculo_voando">
+                    <param id="0" name="X">obstaculo_voando.X + 5</param>
+                </action>
+                <action id="-2" name="Set Y" sid="840966943252881" type="obstaculo_voando">
+                    <param id="0" name="Y">obstaculo_voando.Y - 10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

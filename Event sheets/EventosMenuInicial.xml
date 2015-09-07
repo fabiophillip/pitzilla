@@ -84,5 +84,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2343735771902711">
+            <conditions>
+                <condition id="17" name="On tap object" sid="613791134085831" type="Touch">
+                    <param id="0" name="Object">Botao_instrucoes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9777006824107861" type="System">
+                    <param id="0" name="Layout">Instrucoes1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8015650022922931">
+            <conditions>
+                <condition id="17" name="On tap object" sid="5637640521553813" type="Touch">
+                    <param id="0" name="Object">Botao_jogar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2175196789456155" type="System">
+                    <param id="0" name="Layout">TelaSelecioneDino</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

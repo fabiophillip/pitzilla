@@ -91,65 +91,11 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="3" loop="1" name="dino" pingpong="0" repeatcount="1" repeatto="0" sid="9514835308892654" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda1.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda2.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda3.png" />
-                </animation>
-                <animation framecount="3" loop="0" name="dino_planando" pingpong="0" repeatcount="1" repeatto="0" sid="1724997107745216" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda1.png">
                         <collision-poly>
-                            <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
-                            <point x="0.811765" y="0.5" />
-                            <point x="0.941176" y="0.95" />
-                            <point x="0.494118" y="1" />
-                            <point x="0.282353" y="0.76" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa2.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
-                        <collision-poly>
-                            <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
-                            <point x="0.811765" y="0.5" />
-                            <point x="0.941176" y="0.95" />
-                            <point x="0.494118" y="1" />
-                            <point x="0.282353" y="0.76" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="2" loop="1" name="dino_alado" pingpong="0" repeatcount="1" repeatto="0" sid="2976652816194874" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
-                        <collision-poly>
-                            <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
-                            <point x="0.811765" y="0.5" />
-                            <point x="0.941176" y="0.95" />
-                            <point x="0.494118" y="1" />
-                            <point x="0.282353" y="0.76" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa3.png">
-                        <collision-poly>
-                            <point x="0.105882" y="0.09" />
-                            <point x="0.494118" y="0.13" />
-                            <point x="0.870588" y="0.11" />
-                            <point x="0.811765" y="0.5" />
-                            <point x="0.941176" y="0.95" />
-                            <point x="0.494118" y="1" />
-                            <point x="0.247059" y="0.79" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="3" loop="1" name="dino_alado_perdendo_poder" pingpong="0" repeatcount="1" repeatto="0" sid="5737212105456248" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
-                        <collision-poly>
-                            <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
+                            <point x="0" y="0.07" />
+                            <point x="0.682353" y="0.06" />
+                            <point x="0.964706" y="0.28" />
                             <point x="0.811765" y="0.5" />
                             <point x="0.941176" y="0.95" />
                             <point x="0.494118" y="1" />
@@ -158,11 +104,106 @@
                     </frame>
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda2.png">
                         <collision-poly>
-                            <point x="0.0823529" y="0.07" />
-                            <point x="0.494118" y="0.16" />
-                            <point x="0.847059" y="0.13" />
+                            <point x="0" y="0.09" />
+                            <point x="0.776471" y="0.04" />
+                            <point x="1" y="0.22" />
                             <point x="0.835294" y="0.5" />
-                            <point x="0.788235" y="0.82" />
+                            <point x="0.858824" y="1" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.258824" y="0.78" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda3.png">
+                        <collision-poly>
+                            <point x="3.72529e-009" y="0.1" />
+                            <point x="0.752941" y="0.01" />
+                            <point x="0.964706" y="0.18" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="dino_planando" pingpong="0" repeatcount="1" repeatto="0" sid="1724997107745216" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
+                        <collision-poly>
+                            <point x="0.0235294" y="0.11" />
+                            <point x="0.164706" y="0.02" />
+                            <point x="0.97647" y="0.22" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa2.png">
+                        <collision-poly>
+                            <point x="0.0470588" y="0.09" />
+                            <point x="0.647059" y="0.01" />
+                            <point x="0.964706" y="0.18" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                            <point x="0.0588235" y="0.54" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
+                        <collision-poly>
+                            <point x="0" y="0.03" />
+                            <point x="0.647059" y="0.07" />
+                            <point x="0.97647" y="0.25" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.0470589" y="0.39" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="dino_alado" pingpong="0" repeatcount="1" repeatto="0" sid="2976652816194874" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.788236" y="0.09" />
+                            <point x="0.988235" y="0.24" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.0588236" y="0.42" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa3.png">
+                        <collision-poly>
+                            <point x="0.105882" y="0.09" />
+                            <point x="0.717647" y="1.49012e-008" />
+                            <point x="0.964706" y="0.21" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.435294" y="1" />
+                            <point x="0.0352943" y="0.46" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="dino_alado_perdendo_poder" pingpong="0" repeatcount="1" repeatto="0" sid="5737212105456248" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
+                        <collision-poly>
+                            <point x="0.0352941" y="0.01" />
+                            <point x="0.729412" y="0.05" />
+                            <point x="0.988235" y="0.25" />
+                            <point x="0.858824" y="0.3" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.0705883" y="0.43" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda2.png">
+                        <collision-poly>
+                            <point x="0" y="0.1" />
+                            <point x="0.211765" y="0.03" />
+                            <point x="0.752941" y="0.03" />
+                            <point x="0.988235" y="0.25" />
+                            <point x="0.847059" y="1" />
                             <point x="0.494118" y="1" />
                             <point x="0.258824" y="0.78" />
                         </collision-poly>
@@ -170,34 +211,45 @@
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_voa1.png">
                         <collision-poly>
                             <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
-                            <point x="0.811765" y="0.5" />
+                            <point x="0.211765" y="0.02" />
+                            <point x="0.823529" y="0.1" />
+                            <point x="0.952941" y="0.27" />
                             <point x="0.941176" y="0.95" />
                             <point x="0.494118" y="1" />
-                            <point x="0.282353" y="0.76" />
+                            <point x="0.0470589" y="0.35" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="3" loop="0" name="dino_planando_perdendo_poder" pingpong="0" repeatcount="1" repeatto="0" sid="2269691654834307" speed="5">
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda1.png">
                         <collision-poly>
-                            <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
-                            <point x="0.811765" y="0.5" />
+                            <point x="0.0117647" y="0.11" />
+                            <point x="0.176471" y="0.01" />
+                            <point x="0.811764" y="0.11" />
+                            <point x="0.964706" y="0.24" />
                             <point x="0.941176" y="0.95" />
                             <point x="0.494118" y="1" />
                             <point x="0.282353" y="0.76" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0470588" y="0.1" />
+                            <point x="0.176471" y="0.06" />
+                            <point x="0.752941" y="0.01" />
+                            <point x="0.952941" y="0.14" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                            <point x="0.0823529" y="0.48" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda1.png">
                         <collision-poly>
-                            <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
-                            <point x="0.811765" y="0.5" />
+                            <point x="0.0117647" y="0.06" />
+                            <point x="0.211765" y="0.03" />
+                            <point x="0.823529" y="0.08" />
+                            <point x="0.952941" y="0.24" />
                             <point x="0.941176" y="0.95" />
                             <point x="0.494118" y="1" />
                             <point x="0.282353" y="0.76" />
@@ -207,10 +259,10 @@
                 <animation framecount="3" loop="1" name="dino_com_batata" pingpong="0" repeatcount="1" repeatto="0" sid="1006181700088943" speed="5">
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda1_com_batata.png">
                         <collision-poly>
-                            <point x="0.0705882" y="0.06" />
-                            <point x="0.494118" y="0.19" />
-                            <point x="0.823529" y="0.15" />
-                            <point x="0.929412" y="0.5" />
+                            <point x="0" y="0.05" />
+                            <point x="0.188236" y="0.00999998" />
+                            <point x="0.823529" y="0.09" />
+                            <point x="0.964706" y="0.26" />
                             <point x="0.941176" y="0.95" />
                             <point x="0.494118" y="1" />
                             <point x="0.282353" y="0.76" />
@@ -218,105 +270,367 @@
                     </frame>
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda2_com_batata.png">
                         <collision-poly>
-                            <point x="0.0823529" y="0.07" />
-                            <point x="0.494118" y="0.16" />
-                            <point x="0.847059" y="0.13" />
-                            <point x="0.894118" y="0.5" />
-                            <point x="0.788235" y="0.82" />
+                            <point x="0.0117647" y="0.06" />
+                            <point x="0.235294" y="0.05" />
+                            <point x="0.776471" y="0.04" />
+                            <point x="0.988236" y="0.25" />
+                            <point x="0.858823" y="1" />
                             <point x="0.494118" y="1" />
                             <point x="0.258824" y="0.78" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda3_com_batata.png">
                         <collision-poly>
-                            <point x="0.105882" y="0.09" />
-                            <point x="0.494118" y="0.13" />
-                            <point x="0.870588" y="0.11" />
+                            <point x="0" y="0.11" />
+                            <point x="0.694118" y="0" />
+                            <point x="0.988235" y="0.18" />
                             <point x="0.835294" y="0.5" />
-                            <point x="0.941176" y="0.95" />
+                            <point x="0.941176" y="0.98" />
                             <point x="0.494118" y="1" />
                             <point x="0.247059" y="0.79" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="dina" pingpong="0" repeatcount="1" repeatto="0" sid="7345993384401217" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda1.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda2.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda3.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda1.png">
+                        <collision-poly>
+                            <point x="0" y="0.07" />
+                            <point x="0.2" y="0.03" />
+                            <point x="0.788235" y="0.06" />
+                            <point x="0.976471" y="0.27" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda2.png">
+                        <collision-poly>
+                            <point x="0" y="0.08" />
+                            <point x="0.658824" y="0.02" />
+                            <point x="0.964706" y="0.22" />
+                            <point x="0.835294" y="0.5" />
+                            <point x="0.870588" y="1" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.258824" y="0.78" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda3.png">
+                        <collision-poly>
+                            <point x="0" y="0.09" />
+                            <point x="0.717647" y="0" />
+                            <point x="0.988235" y="0.19" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="1" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="0" name="dina_planando" pingpong="0" repeatcount="1" repeatto="0" sid="4238850451422393" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa1.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa2.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa3.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa1.png">
+                        <collision-poly>
+                            <point x="0" y="0.06" />
+                            <point x="0.505882" y="0" />
+                            <point x="0.976471" y="0.19" />
+                            <point x="0.894118" y="0.46" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.0352941" y="0.44" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa2.png">
+                        <collision-poly>
+                            <point x="0.0117647" y="0.09" />
+                            <point x="0.623529" y="0" />
+                            <point x="0.976471" y="0.15" />
+                            <point x="0.847059" y="0.48" />
+                            <point x="0.941176" y="1" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                            <point x="0.0470588" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa3.png">
+                        <collision-poly>
+                            <point x="0.105882" y="0.09" />
+                            <point x="0.741176" y="0" />
+                            <point x="1" y="0.17" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.447059" y="1" />
+                            <point x="0" y="0.45" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="2" loop="1" name="dina_alado" pingpong="0" repeatcount="1" repeatto="0" sid="4602071323423085" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa1.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa3.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa1.png">
+                        <collision-poly>
+                            <point x="0.0352941" y="0" />
+                            <point x="0.670588" y="0.04" />
+                            <point x="1" y="0.25" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.0235294" y="0.38" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa3.png">
+                        <collision-poly>
+                            <point x="0" y="0.08" />
+                            <point x="0.682353" y="0" />
+                            <point x="1" y="0.19" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.164706" y="0.71" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="dina_alado_perdendo_poder" pingpong="0" repeatcount="1" repeatto="0" sid="4532283992418439" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa1.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa1.png">
+                        <collision-poly>
+                            <point x="0.0117647" y="0" />
+                            <point x="0.623529" y="0.03" />
+                            <point x="1" y="0.22" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.0470589" y="0.39" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda2.png">
                         <collision-poly>
-                            <point x="0.0823529" y="0.07" />
-                            <point x="0.494118" y="0.04" />
-                            <point x="0.847059" y="0.13" />
+                            <point x="0" y="0.07" />
+                            <point x="0.752942" y="0.04" />
+                            <point x="0.964706" y="0.19" />
                             <point x="0.835294" y="0.5" />
-                            <point x="0.788235" y="0.82" />
+                            <point x="0.894117" y="1" />
                             <point x="0.494118" y="1" />
                             <point x="0.258824" y="0.78" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa3.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa3.png">
+                        <collision-poly>
+                            <point x="0.0352941" y="0.07" />
+                            <point x="0.729412" y="0" />
+                            <point x="1" y="0.17" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.952941" y="0.99" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.117647" y="0.67" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="0" name="dina_planando_perdendo_poder" pingpong="0" repeatcount="1" repeatto="0" sid="4739429683826093" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda1.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa2.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda1.png">
+                        <collision-poly>
+                            <point x="0" y="0.06" />
+                            <point x="0.223529" y="0" />
+                            <point x="0.905882" y="0.12" />
+                            <point x="0.976471" y="0.35" />
+                            <point x="0.941176" y="1" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_voa2.png">
+                        <collision-poly>
+                            <point x="0" y="0.07" />
+                            <point x="0.623529" y="0" />
+                            <point x="1" y="0.17" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                            <point x="0.0941176" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.06" />
+                            <point x="0.235294" y="0" />
+                            <point x="0.917647" y="0.1" />
+                            <point x="0.964706" y="0.33" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="dina_com_batata" pingpong="0" repeatcount="1" repeatto="0" sid="2483753365103938" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda1_com_batata.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda2_com_batata.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda3_com_batata.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda1_com_batata.png">
+                        <collision-poly>
+                            <point x="0" y="0.04" />
+                            <point x="0.529412" y="0.02" />
+                            <point x="0.952941" y="0.16" />
+                            <point x="0.929412" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda2_com_batata.png">
+                        <collision-poly>
+                            <point x="0" y="0.08" />
+                            <point x="0.6" y="0" />
+                            <point x="0.976471" y="0.19" />
+                            <point x="0.894118" y="0.5" />
+                            <point x="0.847059" y="1" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.258824" y="0.78" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda3_com_batata.png">
+                        <collision-poly>
+                            <point x="5.58794e-009" y="0.11" />
+                            <point x="0.647059" y="0" />
+                            <point x="1" y="0.17" />
+                            <point x="0.929412" y="0.47" />
+                            <point x="0.952941" y="0.99" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="dino_com_superpulo" pingpong="0" repeatcount="1" repeatto="0" sid="3019877763415015" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_superpulo1.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_superpulo2.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_superpulo3.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_superpulo1.png">
+                        <collision-poly>
+                            <point x="0.0470588" y="0" />
+                            <point x="0.435294" y="0.06" />
+                            <point x="0.941176" y="0.12" />
+                            <point x="0.894118" y="0.63" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.0705882" y="0.37" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_superpulo2.png">
+                        <collision-poly>
+                            <point x="0" y="0.07" />
+                            <point x="0.223529" y="0.03" />
+                            <point x="0.905882" y="0.06" />
+                            <point x="0.835294" y="0.52" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.176471" y="0.46" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_superpulo3.png">
+                        <collision-poly>
+                            <point x="0" y="0.14" />
+                            <point x="0.164706" y="0.04" />
+                            <point x="0.929412" y="0.03" />
+                            <point x="0.835294" y="0.46" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.188235" y="0.46" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="dina_com_superpulo" pingpong="0" repeatcount="1" repeatto="0" sid="1570057764235234" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_superpulo1.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_superpulo2.png" />
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_superpulo3.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_superpulo1.png">
+                        <collision-poly>
+                            <point x="0" y="0.07" />
+                            <point x="0.188235" y="0.03" />
+                            <point x="0.941176" y="0.15" />
+                            <point x="0.847059" y="0.51" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.211765" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_superpulo2.png">
+                        <collision-poly>
+                            <point x="5.58794e-009" y="0.07" />
+                            <point x="0.494118" y="0.04" />
+                            <point x="0.917647" y="0.09" />
+                            <point x="0.823529" y="0.39" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.188235" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_superpulo3.png">
+                        <collision-poly>
+                            <point x="0.0235294" y="0.13" />
+                            <point x="0.541176" y="0.01" />
+                            <point x="0.952941" y="0.1" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.188235" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="dino_superpulo_perdendo_poder" pingpong="0" repeatcount="1" repeatto="0" sid="5677320989658515" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="5.58794e-009" y="0.06" />
+                            <point x="0.211765" y="0.01" />
+                            <point x="0.917647" y="0.12" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.211765" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dino_anda2.png">
                         <collision-poly>
-                            <point x="0.0823529" y="0.07" />
-                            <point x="0.494118" y="0.16" />
-                            <point x="0.847059" y="0.13" />
+                            <point x="0" y="0.06" />
+                            <point x="0.247059" y="0.04" />
+                            <point x="0.976471" y="0.2" />
                             <point x="0.835294" y="0.5" />
-                            <point x="0.788235" y="0.82" />
+                            <point x="0.894117" y="1" />
                             <point x="0.494118" y="1" />
                             <point x="0.258824" y="0.78" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0235294" y="0.08" />
+                            <point x="0.717647" y="0.02" />
+                            <point x="0.941176" y="0.19" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.188235" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="dina_superpulo_perdendo_poder" pingpong="0" repeatcount="1" repeatto="0" sid="6688823232951082" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.08" />
+                            <point x="0.164706" y="7.45058e-009" />
+                            <point x="0.952941" y="0.24" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.211765" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\FábioPhillip\Desktop\UFRN 2015.2\pitzilla\dina_anda2.png">
                         <collision-poly>
-                            <point x="0.0823529" y="0.07" />
-                            <point x="0.494118" y="0.04" />
-                            <point x="0.847059" y="0.13" />
+                            <point x="0.0235294" y="0.08" />
+                            <point x="0.635294" y="0.02" />
+                            <point x="0.976471" y="0.2" />
                             <point x="0.835294" y="0.5" />
-                            <point x="0.788235" y="0.82" />
+                            <point x="0.823529" y="1" />
                             <point x="0.494118" y="1" />
                             <point x="0.258824" y="0.78" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.07" />
+                            <point x="0.670588" y="0" />
+                            <point x="0.952941" y="0.18" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.988235" y="0.99" />
+                            <point x="0.0117647" y="0.99" />
+                            <point x="0.164706" y="0.46" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1650,6 +1964,549 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Controles2" sid="6921375374693">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="no_chao" sid="4917372211004105" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8808008768600018" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\Player\Default\000.png">
+                        <collision-poly>
+                            <point x="0.0705882" y="0.06" />
+                            <point x="0.494118" y="0.19" />
+                            <point x="0.823529" y="0.15" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DescricaoControles" sid="7601594350412309">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="obstaculo_imovel" sid="2530397179144238">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="103651812837578" speed="5">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\DinoObstaculo\pterodatilo_perto_chao\000.png">
+                        <collision-poly>
+                            <point x="0.156863" y="0.186047" />
+                            <point x="0.490196" y="0" />
+                            <point x="0.784314" y="0.255814" />
+                            <point x="0.980392" y="0.488372" />
+                            <point x="0.882353" y="0.860465" />
+                            <point x="0.490196" y="0.930233" />
+                            <point x="0.137255" y="0.837209" />
+                            <point x="0" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_avancar_tutorial1" sid="689447366447944">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1220868180423055" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\GreyButton_RightArrow.png">
+                        <collision-poly>
+                            <point x="0.170455" y="0.170455" />
+                            <point x="0.5" y="0.0340909" />
+                            <point x="0.829545" y="0.170455" />
+                            <point x="0.965909" y="0.5" />
+                            <point x="0.829545" y="0.829545" />
+                            <point x="0.5" y="0.965909" />
+                            <point x="0.170455" y="0.829545" />
+                            <point x="0.0340909" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Controles" sid="360625047283763">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Controles5" sid="5578333527668692">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="no_chao" sid="215117465845624" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6143355060209419" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\Player\Default\000.png">
+                        <collision-poly>
+                            <point x="0.0705882" y="0.06" />
+                            <point x="0.494118" y="0.19" />
+                            <point x="0.823529" y="0.15" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_menu_instrucoes" sid="2941314503644137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1823925236357841" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\botao_sim_nao.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Controles1" sid="1760584689623082">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7800528072791769" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\Player\Default\001.png">
+                        <collision-poly>
+                            <point x="0.105882" y="0.09" />
+                            <point x="0.494118" y="0.13" />
+                            <point x="0.870588" y="0.11" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Controles3" sid="9694030047838886">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628678199043235" speed="1">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508475">
+                        <collision-poly>
+                            <point x="0.135593" y="0.135593" />
+                            <point x="0.491525" y="0" />
+                            <point x="0.559322" y="0.440678" />
+                            <point x="0.898305" y="0.491525" />
+                            <point x="0.864407" y="0.864407" />
+                            <point x="0.491525" y="0.830508" />
+                            <point x="0.40678" y="0.59322" />
+                            <point x="0.355932" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508475" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\tapTick.png">
+                        <collision-poly>
+                            <point x="0.135593" y="0.135593" />
+                            <point x="0.491525" y="0" />
+                            <point x="0.559322" y="0.440678" />
+                            <point x="0.898305" y="0.491525" />
+                            <point x="0.864407" y="0.864407" />
+                            <point x="0.491525" y="0.830508" />
+                            <point x="0.40678" y="0.59322" />
+                            <point x="0.355932" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Controles4" sid="431542537596206">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3251114741691945" speed="1">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508475">
+                        <collision-poly>
+                            <point x="0.135593" y="0.135593" />
+                            <point x="0.491525" y="0" />
+                            <point x="0.559322" y="0.440678" />
+                            <point x="0.898305" y="0.491525" />
+                            <point x="0.864407" y="0.864407" />
+                            <point x="0.491525" y="0.830508" />
+                            <point x="0.40678" y="0.59322" />
+                            <point x="0.355932" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508475" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\tapTick.png">
+                        <collision-poly>
+                            <point x="0.135593" y="0.135593" />
+                            <point x="0.491525" y="0" />
+                            <point x="0.559322" y="0.440678" />
+                            <point x="0.898305" y="0.491525" />
+                            <point x="0.864407" y="0.864407" />
+                            <point x="0.491525" y="0.830508" />
+                            <point x="0.40678" y="0.59322" />
+                            <point x="0.355932" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="texto_botao_menu_instrucoes" sid="135625203126441">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="botao_voltar_tutorial2" sid="2712856791266471">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9851854908800465" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\GreyButton_RightArrow.png">
+                        <collision-poly>
+                            <point x="0.965909" y="0.5" />
+                            <point x="0.829545" y="0.829545" />
+                            <point x="0.5" y="0.965909" />
+                            <point x="0.170455" y="0.829545" />
+                            <point x="0.0340909" y="0.5" />
+                            <point x="0.170455" y="0.170455" />
+                            <point x="0.5" y="0.034091" />
+                            <point x="0.829545" y="0.170455" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Seta_instrucoes" sid="4166303596272634">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587006374377118" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\arrowSilver_right.png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0.047619" />
+                            <point x="0.5" y="0.142857" />
+                            <point x="0.772727" y="0.238095" />
+                            <point x="1" y="0.47619" />
+                            <point x="0.772727" y="0.761905" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.0454545" y="0.952381" />
+                            <point x="0.0909091" y="0.47619" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_avancar_tutorial2" sid="4871160346307604">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9266663205474487" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\GreyButton_RightArrow.png">
+                        <collision-poly>
+                            <point x="0.170455" y="0.170455" />
+                            <point x="0.5" y="0.0340909" />
+                            <point x="0.829545" y="0.170455" />
+                            <point x="0.965909" y="0.5" />
+                            <point x="0.829545" y="0.829545" />
+                            <point x="0.5" y="0.965909" />
+                            <point x="0.170455" y="0.829545" />
+                            <point x="0.0340909" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pittsburg_imovel" sid="9537174338603749">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346755846798579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\pittsburg\Default\000.png">
+                        <collision-poly>
+                            <point x="0.145833" y="0.169355" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.169355" />
+                            <point x="0.895833" y="0.5" />
+                            <point x="0.895833" y="0.879032" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.145833" y="0.830645" />
+                            <point x="0.104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obstaculo_voando" sid="3147390456635599">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2479077626284847" speed="5">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.511628" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\DinoObstaculo\pterodatilo_perto_chao\000.png">
+                        <collision-poly>
+                            <point x="0.156863" y="0.186047" />
+                            <point x="0.490196" y="0" />
+                            <point x="0.784314" y="0.255814" />
+                            <point x="0.980392" y="0.488372" />
+                            <point x="0.882353" y="0.860465" />
+                            <point x="0.490196" y="0.930233" />
+                            <point x="0.137255" y="0.837209" />
+                            <point x="0" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dino_com_batata_instrucoes" sid="1004228256244056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5807507603278201" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\Player\dino_com_batata\000.png">
+                        <collision-poly>
+                            <point x="0.0705882" y="0.06" />
+                            <point x="0.494118" y="0.19" />
+                            <point x="0.823529" y="0.15" />
+                            <point x="0.929412" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.282353" y="0.76" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dino_alado_instrucoes" sid="9444628142441272">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="pode ser 1 ou menos 1" name="no_chao" sid="8904697459849352" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1166002660845979" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\Player\dino_alado\001.png">
+                        <collision-poly>
+                            <point x="0.105882" y="0.09" />
+                            <point x="0.494118" y="0.13" />
+                            <point x="0.870588" y="0.11" />
+                            <point x="0.811765" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.247059" y="0.79" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\Player\dino_alado\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_voltar_tutorial3" sid="2822623859741381">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="974022099201411" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\GreyButton_RightArrow.png">
+                        <collision-poly>
+                            <point x="0.965909" y="0.5" />
+                            <point x="0.829545" y="0.829545" />
+                            <point x="0.5" y="0.965909" />
+                            <point x="0.170455" y="0.829545" />
+                            <point x="0.0340909" y="0.5" />
+                            <point x="0.170455" y="0.170455" />
+                            <point x="0.5" y="0.0340909" />
+                            <point x="0.829545" y="0.170455" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_avancar_tutorial3" sid="3398456774521521">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6649195848325709" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\GreyButton_RightArrow.png">
+                        <collision-poly>
+                            <point x="0.170455" y="0.170455" />
+                            <point x="0.5" y="0.0340909" />
+                            <point x="0.829545" y="0.170455" />
+                            <point x="0.965909" y="0.5" />
+                            <point x="0.829545" y="0.829545" />
+                            <point x="0.5" y="0.965909" />
+                            <point x="0.170455" y="0.829545" />
+                            <point x="0.0340909" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hamburguer_atraido_instrucoes" sid="2900981695450647">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1468555965695236" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\pittsburg\Default\000.png">
+                        <collision-poly>
+                            <point x="0.145833" y="0.169355" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.169355" />
+                            <point x="0.895833" y="0.5" />
+                            <point x="0.895833" y="0.879032" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.145833" y="0.830645" />
+                            <point x="0.104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="9465914563121333">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5184206094522057" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\pittschicken\Default\000.png">
+                        <collision-poly>
+                            <point x="0.151316" y="0.232323" />
+                            <point x="0.5" y="0" />
+                            <point x="0.835526" y="0.252525" />
+                            <point x="0.868421" y="0.494949" />
+                            <point x="0.894737" y="0.838384" />
+                            <point x="0.5" y="0.979798" />
+                            <point x="0.0986842" y="0.848485" />
+                            <point x="0.111842" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="7489305068791235">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2055767744491801" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\batata\Default\000.png">
+                        <collision-poly>
+                            <point x="0.176471" y="0.117188" />
+                            <point x="0.494118" y="0.148438" />
+                            <point x="0.858824" y="0.09375" />
+                            <point x="0.894118" y="0.5" />
+                            <point x="0.8" y="0.867188" />
+                            <point x="0.494118" y="0.984375" />
+                            <point x="0.105882" y="0.929688" />
+                            <point x="0.0352941" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="7870197869433806">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9077895609391041" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\botao_cinza_menor_menor.png">
+                        <collision-poly>
+                            <point x="0.0277778" y="0.0277778" />
+                            <point x="0.5" y="0" />
+                            <point x="0.972222" y="0.0277778" />
+                            <point x="1" y="0.5" />
+                            <point x="0.972222" y="0.972222" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0277778" y="0.972222" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_voltar_tutorial4" sid="1799261542441409">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6628405709043143" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\GreyButton_RightArrow.png">
+                        <collision-poly>
+                            <point x="0.0340909" y="0.5" />
+                            <point x="0.170455" y="0.170455" />
+                            <point x="0.5" y="0.0340909" />
+                            <point x="0.829545" y="0.170455" />
+                            <point x="0.965909" y="0.5" />
+                            <point x="0.829545" y="0.829545" />
+                            <point x="0.5" y="0.965909" />
+                            <point x="0.170455" y="0.829545" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="9363562888089706">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2351023224016921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\moedinha_nova_menor.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.166667" />
+                            <point x="0.5" y="0.0333333" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.833333" y="0.833333" />
+                            <point x="0.5" y="0.966667" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0.0333333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao_jogar_instrucoes" sid="6963512822944172">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7950354869770708" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fábioandrews\Desktop\ufrn\ufrn 2015.2\pitzilla\botao_fim_jogo.png">
+                        <collision-poly>
+                            <point x="0.06" y="0.166667" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.945" y="0.152778" />
+                            <point x="0.995" y="0.5" />
+                            <point x="0.94" y="0.833333" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.065" y="0.819444" />
+                            <point x="0.015" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Jogar_instrucoes" sid="8027178183523174">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="barrinha_instrucoes" sid="4377699621600301">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9991163907839215" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129">
+                        <collision-poly>
+                            <point x="0.0025" y="0.0322581" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9975" y="0.0322581" />
+                            <point x="0.9975" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0025" y="0.967742" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129">
+                        <collision-poly>
+                            <point x="0.0025" y="0.0322581" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9975" y="0.0322581" />
+                            <point x="0.9975" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0025" y="0.967742" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129">
+                        <collision-poly>
+                            <point x="0.0025" y="0.0322581" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9975" y="0.0322581" />
+                            <point x="0.9975" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0025" y="0.967742" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129">
+                        <collision-poly>
+                            <point x="0.0025" y="0.0322581" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9975" y="0.0322581" />
+                            <point x="0.9975" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0025" y="0.967742" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\Users\fábioandrews\Documents\git\pitzilla\pitzilla\Animations\frente_barra_pitzilla\Default\000.png">
+                        <collision-poly>
+                            <point x="0.0025" y="0.0322581" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9975" y="0.0322581" />
+                            <point x="0.9975" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0025" y="0.967742" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1661,6 +2518,10 @@
         <layout>Lojinha_musica.xml</layout>
         <layout>TelaSelecioneDino.xml</layout>
         <layout>Lojinha_dino.xml</layout>
+        <layout>Instrucoes1.xml</layout>
+        <layout>Instrucoes2.xml</layout>
+        <layout>Instrucoes3.xml</layout>
+        <layout>Instrucoes4.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
@@ -1671,17 +2532,21 @@
         <event-sheet>Eventos_lojinha_musica.xml</event-sheet>
         <event-sheet>EventosSelecioneDino.xml</event-sheet>
         <event-sheet>Eventos_lojinha_dino.xml</event-sheet>
+        <event-sheet>EventosInstrucoes1.xml</event-sheet>
+        <event-sheet>EventosInstrucoes2.xml</event-sheet>
+        <event-sheet>EventosInstrucoes3.xml</event-sheet>
+        <event-sheet>EventosInstrucoes4.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="136">
+        <global-instance type="Touch" uid="222">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="137" />
-        <global-instance type="LocalStorage" uid="138" />
-        <global-instance type="Browser" uid="147" />
-        <global-instance type="Audio" uid="148">
+        <global-instance type="Keyboard" uid="223" />
+        <global-instance type="LocalStorage" uid="224" />
+        <global-instance type="Browser" uid="225" />
+        <global-instance type="Audio" uid="226">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

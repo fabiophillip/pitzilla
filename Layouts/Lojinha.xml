@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="77">
+                <instance type="BackgroundNormal" uid="81">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Lojinha" uid="78">
+                <instance type="Lojinha" uid="82">
                     <properties>
                         <text>Lojinha</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,51 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Botao_sublojinha_musica" uid="80">
+                <instance type="Botao_sublojinha_musica" uid="83">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>198</x>
+                        <y>140</y>
+                        <z>0</z>
+                        <width>172</width>
+                        <height>172</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Botao_sublojinha_personagens" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>431</x>
+                        <y>140</y>
+                        <z>0</z>
+                        <width>172</width>
+                        <height>172</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="icone_musica" uid="85">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -89,51 +133,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>199</x>
-                        <y>159</y>
-                        <z>0</z>
-                        <width>198</width>
-                        <height>198</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Botao_sublojinha_personagens" uid="79">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>432</x>
-                        <y>159</y>
-                        <z>0</z>
-                        <width>198</width>
-                        <height>198</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="icone_musica" uid="81">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>200</x>
-                        <y>137</y>
+                        <y>118</y>
                         <z>0</z>
                         <width>100</width>
                         <height>104</height>
@@ -144,7 +144,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Musica" uid="82">
+                <instance type="Musica" uid="86">
                     <properties>
                         <text>Música</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -159,8 +159,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>153</x>
-                        <y>200</y>
+                        <x>152</x>
+                        <y>181</y>
                         <z>0</z>
                         <width>209</width>
                         <height>50</height>
@@ -171,7 +171,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="botao_voltar_para_menu_inicial" uid="83">
+                <instance type="botao_voltar_para_menu_inicial" uid="87">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -182,7 +182,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>311</x>
-                        <y>305</y>
+                        <y>276</y>
                         <z>0</z>
                         <width>200</width>
                         <height>72</height>
@@ -193,7 +193,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text_voltar_menu_inicial" uid="84">
+                <instance type="Text_voltar_menu_inicial" uid="88">
                     <properties>
                         <text>Voltar</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -209,7 +209,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>273</x>
-                        <y>285</y>
+                        <y>256</y>
                         <z>0</z>
                         <width>200</width>
                         <height>47</height>

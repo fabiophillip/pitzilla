@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosInstrucoes4</name>
+    <events>
+        <event-block sid="5859260222148469">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3529164229553388" type="Touch">
+                    <param id="0" name="Object">botao_jogar_instrucoes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5451523449085664" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4206378490851994">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8122081597915666" type="Touch">
+                    <param id="0" name="Object">botao_voltar_tutorial4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8668696658803771" type="System">
+                    <param id="0" name="Layout">Instrucoes3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7286177641719005">
+            <conditions>
+                <condition id="17" name="On tap object" sid="6244171104173104" type="Touch">
+                    <param id="0" name="Object">botao_menu_instrucoes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3019520436097959" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

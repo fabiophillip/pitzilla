@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundNormal" uid="18">
+                <instance type="BackgroundNormal" uid="44">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="label_moedas" uid="32">
+                <instance type="label_moedas" uid="45">
                     <properties>
                         <text>Moedas:</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="icone_coins" uid="33">
+                <instance type="icone_coins" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -100,7 +100,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="X_fim_jogo_coins" uid="34">
+                <instance type="X_fim_jogo_coins" uid="47">
                     <properties>
                         <text>X</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -137,8 +137,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>311</x>
-                        <y>224</y>
+                        <x>312</x>
+                        <y>195</y>
                         <z>0</z>
                         <width>200</width>
                         <height>72</height>
@@ -159,8 +159,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>142</x>
-                        <y>315</y>
+                        <x>143</x>
+                        <y>286</y>
                         <z>0</z>
                         <width>200</width>
                         <height>72</height>
@@ -181,8 +181,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>477</x>
-                        <y>315</y>
+                        <x>478</x>
+                        <y>286</y>
                         <z>0</z>
                         <width>200</width>
                         <height>72</height>
@@ -208,8 +208,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>282</x>
-                        <y>200</y>
+                        <x>276</x>
+                        <y>171</y>
                         <z>0</z>
                         <width>200</width>
                         <height>43</height>
@@ -235,8 +235,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>81</x>
-                        <y>293</y>
+                        <x>82</x>
+                        <y>264</y>
                         <z>0</z>
                         <width>200</width>
                         <height>43</height>
@@ -262,10 +262,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>434</x>
-                        <y>293</y>
+                        <x>435</x>
+                        <y>264</y>
                         <z>0</z>
-                        <width>96</width>
+                        <width>164</width>
                         <height>41</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

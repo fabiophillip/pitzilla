@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosInstrucoes1</name>
+    <events>
+        <event-block sid="2034328766630568">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9914076998314624" type="Touch">
+                    <param id="0" name="Object">botao_menu_instrucoes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3553826557575695" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1896433521724374">
+            <conditions>
+                <condition id="17" name="On tap object" sid="6175924798300168" type="Touch">
+                    <param id="0" name="Object">botao_avancar_tutorial1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2861075144240371" type="System">
+                    <param id="0" name="Layout">Instrucoes2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4969634621150696">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6857036207316816" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="4814226225803429" type="Controles5">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Value">-(Controles5.no_chao)</param>
+                </action>
+                <action id="-10" name="Set value" sid="6287470520267844" type="Controles2">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Value">-(Controles2.no_chao)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="84361129079913">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7163066631969645" type="Controles2">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="8634535926606333" type="Controles2">
+                    <param id="0" name="Y">208</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3910588065925309">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5995576465571115" type="Controles2">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="4788725676576139" type="Controles2">
+                    <param id="0" name="Y">130</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7306045180650238">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9771832445318531" type="Controles5">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="69012900081432" type="Controles5">
+                    <param id="0" name="Y">130</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3974827341609865">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2334050250954391" type="Controles5">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3425358857855071" type="Controles5">
+                    <param id="0" name="Y">77</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

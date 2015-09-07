@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosInstrucoes3</name>
+    <events>
+        <event-block sid="1700565540571571">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2461589946502496" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="593637467164992" type="dino_alado_instrucoes">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Value">-(dino_alado_instrucoes.no_chao)</param>
+                </action>
+                <action id="-1" name="Set X" sid="7546151742956537" type="hamburguer_atraido_instrucoes">
+                    <param id="0" name="X">hamburguer_atraido_instrucoes.X - 30</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9112550837307141">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3657630496986824" type="dino_alado_instrucoes">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="239150819447332" type="dino_alado_instrucoes">
+                    <param id="0" name="Y">205</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1297829019198132">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8039120298698203" type="dino_alado_instrucoes">
+                    <param id="0" name="Instance variable">no_chao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="8554947836553623" type="dino_alado_instrucoes">
+                    <param id="0" name="Y">191</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="295076308107967">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9123817414845467" type="Touch">
+                    <param id="0" name="Object">botao_menu_instrucoes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4026678487012798" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="23801296648942">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3255427385935461" type="Touch">
+                    <param id="0" name="Object">botao_voltar_tutorial3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="850193734557098" type="System">
+                    <param id="0" name="Layout">Instrucoes2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5277154841258557">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2120984078432337" type="hamburguer_atraido_instrucoes">
+                    <param id="0" name="Object">dino_com_batata_instrucoes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="5904768048030851" type="hamburguer_atraido_instrucoes">
+                    <param id="0" name="X">431</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2303012917501425">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9959611929392811" type="Touch">
+                    <param id="0" name="Object">botao_avancar_tutorial3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7250587492537494" type="System">
+                    <param id="0" name="Layout">Instrucoes4</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

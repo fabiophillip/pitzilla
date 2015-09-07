@@ -56,6 +56,9 @@
         <event-block any="1" sid="977804862300138">
             <conditions>
                 <condition id="0" name="On any touch start" sid="2364423103120581" type="Touch" />
+                <condition id="17" name="On tap object" sid="8997099082660619" type="Touch">
+                    <param id="0" name="Object">pause_button</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="1774603341767137" type="Player">
